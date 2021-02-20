@@ -1,16 +1,17 @@
 import Head from 'next/head'
-import styles from '@/styles/Home.module.css'
+import styles from '@/styles/Pages/Home.module.scss'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Austria-next</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to</h1>
+        <h1 className='text-info'>Hallo word</h1>
+        <p className='text-white-50 bg-dark'>Nyobak boostrap</p>
       </main>
 
       <footer className={styles.footer}>
