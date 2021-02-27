@@ -1,0 +1,14 @@
+.border-dashed {
+  border-style: dashed !important;
+}
+
+.image {
+  &__cover {
+    object-fit: cover;
+  }
+
+  &__contain {
+    object-fit: contain;
+  }
+}
+
