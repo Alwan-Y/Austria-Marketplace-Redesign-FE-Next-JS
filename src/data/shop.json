@@ -1,42 +1,84 @@
 {
   "catalogs": [
     {
-      "category": "Electornic",
+      "category": "electronic",
       "products": [
         {
+          "id": "7d90769a-78c6-11eb-9439-0242ac130002",
           "name": "handpone",
           "price": 500.0,
-          "img": "http://placeimg.com/640/480/tech"
+          "img": "https://picsum.photos/id/1/340/280"
         },
         {
+          "id": "7d9078ca-78c6-11eb-9439-0242ac130002",
           "name": "Television",
           "price": 100000,
-          "img": "http://placeimg.com/640/480/tech"
+          "img": "https://picsum.photos/id/160/340/280"
         },
         {
+          "id": "7d9079ba-78c6-11eb-9439-0242ac130002",
           "name": "Laptop",
           "price": 300000,
-          "img": "http://placeimg.com/640/480/tech"
+          "img": "https://picsum.photos/id/119/340/280"
+        },
+        {
+          "id": "7d907be0-78c6-11eb-9439-0242ac130002",
+          "name": "Asus Hidayah",
+          "price": 600000,
+          "img": "https://picsum.photos/id/119/340/280"
+        },
+        {
+          "id": "7d907cc6-78c6-11eb-9439-0242ac130002",
+          "name": "Flexi",
+          "price": 300000,
+          "img": "https://picsum.photos/id/180/340/280"
+        },
+        {
+          "id": "7d907d8e-78c6-11eb-9439-0242ac130002",
+          "name": "Celengan",
+          "price": 300000,
+          "img": "https://picsum.photos/id/2/340/280"
+        },
+        {
+          "id": "7d907ef6-78c6-11eb-9439-0242ac130002",
+          "name": "Laptop",
+          "price": 300000,
+          "img": "https://picsum.photos/id/119/340/280"
         }
       ]
     },
     {
-      "category": "Fashion",
+      "category": "fashion",
       "products": [
         {
+          "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
           "name": "T-shirt",
           "price": 100000,
-          "img": "http://placeimg.com/640/480/fashion"
+          "img": "https://picsum.photos/id/1005/340/280"
         },
         {
+          "id": "3f23b862-78c7-11eb-9439-0242ac130002",
           "name": "Shooks",
           "price": 20.0,
-          "img": "http://placeimg.com/640/480/fashion"
+          "img": "https://picsum.photos/id/1006/340/280"
         },
         {
+          "id": "3f23b952-78c7-11eb-9439-0242ac130002",
           "name": "Hat",
           "price": 20.0,
-          "img": "http://placeimg.com/640/480/fashion"
+          "img": "https://picsum.photos/id/1025/340/280"
+        },
+        {
+          "id": "aad766e4-78c7-11eb-9439-0242ac130002",
+          "name": "Lipstick",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/1027/340/280"
+        },
+        {
+          "id": "dff49432-78c7-11eb-9439-0242ac130002",
+          "name": "Sepatu",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/103/340/280"
         }
       ]
     }
