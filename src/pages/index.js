@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from '@/styles/Pages/Home.module.scss';
 
+import { getDataCatalog } from '@/lib/shop'
+
 export default function Home() {
   return (
     <div className={styles.container}>

@@ -1,0 +1,44 @@
+{
+  "catalogs": [
+    {
+      "category": "Electornic",
+      "products": [
+        {
+          "name": "handpone",
+          "price": 500.0,
+          "img": "http://placeimg.com/640/480/tech"
+        },
+        {
+          "name": "Television",
+          "price": 100000,
+          "img": "http://placeimg.com/640/480/tech"
+        },
+        {
+          "name": "Laptop",
+          "price": 300000,
+          "img": "http://placeimg.com/640/480/tech"
+        }
+      ]
+    },
+    {
+      "category": "Fashion",
+      "products": [
+        {
+          "name": "T-shirt",
+          "price": 100000,
+          "img": "http://placeimg.com/640/480/fashion"
+        },
+        {
+          "name": "Shooks",
+          "price": 20.0,
+          "img": "http://placeimg.com/640/480/fashion"
+        },
+        {
+          "name": "Hat",
+          "price": 20.0,
+          "img": "http://placeimg.com/640/480/fashion"
+        }
+      ]
+    }
+  ]
+}
