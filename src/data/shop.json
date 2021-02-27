@@ -81,6 +81,35 @@
           "img": "https://picsum.photos/id/103/340/280"
         }
       ]
+    },
+    {
+      "category": "automotive",
+      "products": [
+        {
+          "id": "20d94f2e-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil tua",
+          "price": 5000,
+          "img": "https://picsum.photos/id/133/340/280"
+        },
+        {
+          "id": "20d95186-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil Antik",
+          "price": 15000,
+          "img": "https://picsum.photos/id/1071/340/280"
+        },
+        {
+          "id": "20d95500-78cd-11eb-9439-0242ac130002",
+          "name": "Sampan",
+          "price": 25000,
+          "img": "https://picsum.photos/id/124/340/280"
+        },
+        {
+          "id": "20d955e6-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil Van",
+          "price": 25000,
+          "img": "https://picsum.photos/id/183/340/280"
+        }
+      ]
     }
   ]
 }

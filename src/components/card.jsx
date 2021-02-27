@@ -12,7 +12,7 @@ const Card = ({ thumb, title, price }) => {
         />
         <div className='card-body'>
           <h5 className='card-title'>{title}</h5>
-          <p className='card-text'>Rp. {price}</p>
+          <p className='card-text text-muted'>Rp. {price}</p>
           <a href='#' className='btn btn-primary'>
             Add to cart
           </a>
