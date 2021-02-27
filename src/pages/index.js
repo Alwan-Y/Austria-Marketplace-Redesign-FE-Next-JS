@@ -17,6 +17,7 @@ export default function Home() {
         {/* Tes Link */}
         <Link href="/catalog/electronic">Electornic</Link>
         <Link href="/catalog/fashion">Fashion</Link>
+        <Link href="/catalog/automotive">Automotive</Link>
       </main>
 
       <footer className={styles.footer}>
