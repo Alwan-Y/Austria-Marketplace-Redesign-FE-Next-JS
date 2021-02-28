@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Link from 'next/link';
+
 import styles from '@/styles/Pages/Home.module.scss';
 
 export default function Home() {
@@ -12,6 +14,10 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className="text-info">Hallo word</h1>
         <p className="text-white-50 bg-dark">Nyobak boostrap</p>
+        {/* Tes Link */}
+        <Link href="/catalog/electronic">Electornic</Link>
+        <Link href="/catalog/fashion">Fashion</Link>
+        <Link href="/catalog/automotive">Automotive</Link>
       </main>
 
       <footer className={styles.footer}>
