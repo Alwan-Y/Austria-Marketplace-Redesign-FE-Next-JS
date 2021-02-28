@@ -1,79 +1,78 @@
 .social-media-bar {
-    background-color: #171717;
-    height: 30vh;
-  
-    a {
-      text-decoration: none;
-      color: $primary;
-      font-size: 14px;
-      margin: 0 2vw;
-      word-break: keep-all;
-    }
-  
-    &__logo {
-      white-space: nowrap;
-      transition: all 0.8s ease 0s;
-  
-      &:hover {
-        transition: all 0.8s ease 0s;
-        color: $white !important;
-      }
-  
-      path {
-        fill: $thirty;
-        stroke-width: 0.5;
-        stroke: $thirty;
-      }
-  
-      @include svg-animation("facebook", $thirty, 60, 0);
-      @include svg-animation("twitter", $thirty, 74, 0);
-      @include svg-animation("youtube", $thirty, 77, 0);
-      @include svg-animation("twitch", $thirty, 70, 0);
-    }
-  
-    hr {
-      border-top: 1px solid $secondary;
-    }
+  background-color: #171717;
+  height: 30vh;
+
+  a {
+    text-decoration: none;
+    color: $primary;
+    font-size: 14px;
+    margin: 0 2vw;
+    word-break: keep-all;
   }
-  
-  .footer {
-    &__copyright {
-      font-size: 14px;
-      color: $secondary;
-    }
-  
-    &__link {
-      text-decoration: none;
+
+  &__logo {
+    white-space: nowrap;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
       transition: all 0.8s ease 0s;
-  
-      &:hover {
-        transition: all 0.8s ease 0s;
-        color: $secondary;
-      }
+      color: $white !important;
     }
 
-    &__span {
-      color: $thirty
+    path {
+      fill: $thirty;
+      stroke-width: 0.5;
+      stroke: $thirty;
+    }
+
+    @include svg-animation('facebook', $thirty, 60, 0);
+    @include svg-animation('twitter', $thirty, 74, 0);
+    @include svg-animation('youtube', $thirty, 77, 0);
+    @include svg-animation('twitch', $thirty, 70, 0);
+  }
+
+  hr {
+    border-top: 1px solid $secondary;
+  }
+}
+
+.footer {
+  &__copyright {
+    font-size: 14px;
+    color: $secondary;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      transition: all 0.8s ease 0s;
+      color: $secondary;
     }
   }
-  
-  @media (min-width: 576px) and (max-width: 992px) {
-    .social-media-bar {
-      height: 22vh;
-    }
+
+  &__span {
+    color: $thirty;
   }
-  
-  @media (min-width: 992px) {
-    .social-media-bar {
-      height: 17vh;
-    }
-  
-    .footer .col-lg-6 {
-      text-align: right !important;
-    }
-  
-    .footer .col-lg-4 {
-      text-align: left;
-    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+  .social-media-bar {
+    height: 22vh;
   }
-  
+}
+
+@media (min-width: 992px) {
+  .social-media-bar {
+    height: 17vh;
+  }
+
+  .footer .col-lg-6 {
+    text-align: right !important;
+  }
+
+  .footer .col-lg-4 {
+    text-align: left;
+  }
+}

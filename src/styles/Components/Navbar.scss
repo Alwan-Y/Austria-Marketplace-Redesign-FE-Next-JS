@@ -8,15 +8,14 @@
     font-weight: 200;
     color: $thirty;
   }
-  
+
   &__item.active a {
     color: $thirty !important;
     font-weight: 600;
   }
-  
+
   &__span {
     color: $thirty;
     font-weight: 600;
   }
 }
-
