@@ -4,7 +4,7 @@ import Button from '@/components/commons/Button'
 import Image from 'next/image'
 
 
-const WishlistCard = ({ cols, product }) => {
+const WishlistCard = ({ cols, product, onRemove }) => {
   const { name, url, price } = product
   
   return (
@@ -30,7 +30,7 @@ const WishlistCard = ({ cols, product }) => {
                 Add to Cart
               </Button>
             </div>     
-            <div className="col-sm-3 pt-1" style={{ cursor: "pointer" }}>
+            <div className="col-sm-3 pt-1" style={{ cursor: "pointer" }} onClick={onRemove}>
               <Trash color="red"/> 
             </div>                       
           </div>                  
