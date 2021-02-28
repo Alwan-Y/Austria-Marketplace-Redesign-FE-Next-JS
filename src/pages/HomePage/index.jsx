@@ -2,17 +2,13 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
-import CATALOG from '../../staticData';
+import Navbar from '../../components/Navbar';
 
 const HomePage = ({ items, catalog }) => {
   return (
     <div>
-      {console.log('here')}
-      {CATALOG.map(({id, name}) => {
-        return (
-          <p key={id}>{name}</p>
-        )
-      })}
+      <Navbar />
+      <p>testt</p>
     </div>
   );
 };
