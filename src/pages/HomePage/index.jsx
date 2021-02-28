@@ -2,14 +2,25 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
+import CATALOG from '../../staticData';
 
-const HomePage = (state) => {
-  console.log(state);
-  return <h1>Hallo Dunia</h1>;
+const HomePage = ({ items, catalog }) => {
+  return (
+    <div>
+      {console.log('here')}
+      {CATALOG.map(({id, name}) => {
+        return (
+          <p key={id}>{name}</p>
+        )
+      })}
+    </div>
+  );
 };
 
 const mapStateToProps = (state) => {
-  return state;
+  const { items, catalog } = state;
+
+  return { items, catalog };
 };
 
 const mapDispatchToProps = (setState) => ({
