@@ -8,7 +8,6 @@ const HomePage = ({ items, catalog }) => {
   return (
     <div>
       <Navbar />
-      <p>testt</p>
     </div>
   );
 };
