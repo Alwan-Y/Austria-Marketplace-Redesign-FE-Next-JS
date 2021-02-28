@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux'
+import wishlist from '../reducers/wishlist'
 import Type from '../type';
 
 const initialState = {
@@ -20,4 +22,7 @@ const reducer = (state = initialState, action) => {
   }
 };
 
-export default reducer;
+export default combineReducers({
+  wishlist,
+  reducer
+})
