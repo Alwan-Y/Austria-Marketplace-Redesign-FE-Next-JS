@@ -2,50 +2,51 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100 position-absolute">
-      <div className="container mr-auto">
-        <Link className="navbar-brand mr-5" to="/">
-          Logo
-        </Link>
+    <div className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div className="container">
+        <a className="navbar-brand" href="#">
+          <img src="img/32.png" alt="Hefa Store" />
+        </a>
         <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarText"
-          aria-controls="navbarText"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarText">
-          <ul className="navbar-nav mr-auto navbar-center">
-            <li className="nav-item">
-              <Link to="/" className="nav-link">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav text-uppercase mx-auto">
+            <li className="navbar__item active">
+              <a className="nav-link" href="#">
                 Home
-              </Link>
+              </a>
             </li>
-            <li className="nav-item">
-              <Link to="/feedback" className="nav-link">
-                Feedback
-              </Link>
+            <li className="navbar__item">
+              <a className="nav-link" href="#">
+                Category
+              </a>
             </li>
-          </ul>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/register" className="nav-link">
-                Sign Up
-              </Link>
+            <li className="navbar__item">
+              <a className="nav-link" href="#">
+                Designer
+              </a>
             </li>
-            <li className="nav-item">
-              <Link to="/auth/login" className="nav-link">
-                Login
-              </Link>
+            <li className="navbar__item">
+              <a className="nav-link" href="#">
+                About
+              </a>
             </li>
           </ul>
+          <a href="" className="nav-link text-white">
+            My Cart (<span className="navbar__span">12</span>)
+          </a>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

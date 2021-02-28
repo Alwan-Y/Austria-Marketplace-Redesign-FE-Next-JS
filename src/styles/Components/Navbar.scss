@@ -1,49 +1,23 @@
-.navbar {
-  width: 100vw;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: $white;
-  z-index: 99;
-
-  .nav {
-    &-link {
-      margin: 0px 1vw 0px 1vw;
-      color: $primary !important;
-      text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
-      transition: all 0.8s ease 0s;
-
-      &:hover {
-        transition: all 0.8s ease 0s;
-        color: $secondary !important;
-      }
-
-      &--text-black {
-        color: $black !important;
-      }
-    }
-  }
+body {
+  font-family: 'Montserrat';
 }
 
-@media (min-width: 992px) {
-  .navbar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
+.navbar {
+  background-color: #171717;
+  border-bottom: 1px solid #333;
 
-    &-brand {
-      color: $primary !important;
-    }
+  &__item {
+    margin-right: 24px;
+    font-weight: 200;
+  }
 
-    .nav {
-      &-link {
-        &--margin {
-          margin-left: 20px;
-        }
+  &__item.active a {
+    color: #f9b234 !important;
+    font-weight: 600;
+  }
 
-        &:hover {
-          background: rgba(0, 0, 0, 0.3);
-        }
-      }
-    }
+  &__span {
+    color: #f9b234;
+    font-weight: 600;
   }
 }
