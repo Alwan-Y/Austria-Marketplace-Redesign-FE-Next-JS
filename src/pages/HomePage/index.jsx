@@ -8,15 +8,12 @@ import Footer from '../../components/Footer';
 const HomePage = () => {
   return (
     <div>
-      <Navbar />
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <Footer />
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
     </div>
-  );
+    )
 };
 
 const mapStateToProps = (state) => {
