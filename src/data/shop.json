@@ -1,0 +1,115 @@
+{
+  "catalogs": [
+    {
+      "category": "electronic",
+      "products": [
+        {
+          "id": "7d90769a-78c6-11eb-9439-0242ac130002",
+          "name": "handpone",
+          "price": 500.0,
+          "img": "https://picsum.photos/id/1/340/280"
+        },
+        {
+          "id": "7d9078ca-78c6-11eb-9439-0242ac130002",
+          "name": "Television",
+          "price": 100000,
+          "img": "https://picsum.photos/id/160/340/280"
+        },
+        {
+          "id": "7d9079ba-78c6-11eb-9439-0242ac130002",
+          "name": "Laptop",
+          "price": 300000,
+          "img": "https://picsum.photos/id/119/340/280"
+        },
+        {
+          "id": "7d907be0-78c6-11eb-9439-0242ac130002",
+          "name": "Asus Hidayah",
+          "price": 600000,
+          "img": "https://picsum.photos/id/119/340/280"
+        },
+        {
+          "id": "7d907cc6-78c6-11eb-9439-0242ac130002",
+          "name": "Flexi",
+          "price": 300000,
+          "img": "https://picsum.photos/id/180/340/280"
+        },
+        {
+          "id": "7d907d8e-78c6-11eb-9439-0242ac130002",
+          "name": "Celengan",
+          "price": 300000,
+          "img": "https://picsum.photos/id/2/340/280"
+        },
+        {
+          "id": "7d907ef6-78c6-11eb-9439-0242ac130002",
+          "name": "Laptop",
+          "price": 300000,
+          "img": "https://picsum.photos/id/119/340/280"
+        }
+      ]
+    },
+    {
+      "category": "fashion",
+      "products": [
+        {
+          "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
+          "name": "T-shirt",
+          "price": 100000,
+          "img": "https://picsum.photos/id/1005/340/280"
+        },
+        {
+          "id": "3f23b862-78c7-11eb-9439-0242ac130002",
+          "name": "Shooks",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/1006/340/280"
+        },
+        {
+          "id": "3f23b952-78c7-11eb-9439-0242ac130002",
+          "name": "Hat",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/1025/340/280"
+        },
+        {
+          "id": "aad766e4-78c7-11eb-9439-0242ac130002",
+          "name": "Lipstick",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/1027/340/280"
+        },
+        {
+          "id": "dff49432-78c7-11eb-9439-0242ac130002",
+          "name": "Sepatu",
+          "price": 20.0,
+          "img": "https://picsum.photos/id/103/340/280"
+        }
+      ]
+    },
+    {
+      "category": "automotive",
+      "products": [
+        {
+          "id": "20d94f2e-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil tua",
+          "price": 5000,
+          "img": "https://picsum.photos/id/133/340/280"
+        },
+        {
+          "id": "20d95186-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil Antik",
+          "price": 15000,
+          "img": "https://picsum.photos/id/1071/340/280"
+        },
+        {
+          "id": "20d95500-78cd-11eb-9439-0242ac130002",
+          "name": "Sampan",
+          "price": 25000,
+          "img": "https://picsum.photos/id/124/340/280"
+        },
+        {
+          "id": "20d955e6-78cd-11eb-9439-0242ac130002",
+          "name": "Mobil Van",
+          "price": 25000,
+          "img": "https://picsum.photos/id/183/340/280"
+        }
+      ]
+    }
+  ]
+}
