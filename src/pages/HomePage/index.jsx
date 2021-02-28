@@ -4,12 +4,8 @@ import Action from '../../redux/action';
 import Type from '../../redux/type';
 import Navbar from '../../components/Navbar';
 
-const HomePage = ({ items, catalog }) => {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+const HomePage = () => {
+  return <Navbar />;
 };
 
 const mapStateToProps = (state) => {
