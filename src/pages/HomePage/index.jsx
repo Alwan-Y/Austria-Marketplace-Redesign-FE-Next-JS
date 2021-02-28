@@ -2,8 +2,6 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
 
 const HomePage = () => {
   return (
