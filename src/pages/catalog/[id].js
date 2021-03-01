@@ -11,6 +11,7 @@ export default function Catalog({ product }) {
       <Head>
         <title>{product.category} | Austria-next</title>
       </Head>
+      <Link href="/wishlist">Wishlist</Link>
       <h1>category : {product.category}</h1>
       <div className='row'>
         {product.products.map((product) => (
