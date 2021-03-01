@@ -2,14 +2,24 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
 
-const HomePage = (state) => {
-  console.log(state);
-  return <h1>Hallo Dunia</h1>;
+const HomePage = () => {
+  return (
+    <div>
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
+      <h1>Ini Home Page</h1>
+    </div>
+    )
 };
 
 const mapStateToProps = (state) => {
-  return state;
+  const { items, catalog } = state;
+
+  return { items, catalog };
 };
 
 const mapDispatchToProps = (setState) => ({
