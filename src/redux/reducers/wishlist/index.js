@@ -2,9 +2,9 @@ import type from '../../type';
 
 const initialState = {
   wishlist: [
-    { id: 1, url: '/image1.jpg', name: 'Baju anu'},
-    { id: 2, url: '/image.jpg', name: 'Baju unik'},
-    { id: 3, url: '/image1.jpg', name: 'Baju unik'},
+    { id: 1, img: '/image1.jpg', name: 'Baju anu', price: 1000},
+    { id: 2, img: '/image.jpg', name: 'Baju unik', price: 1000},
+    { id: 3, img: '/image1.jpg', name: 'Baju unik', price: 1000},
   ]
 }
 
