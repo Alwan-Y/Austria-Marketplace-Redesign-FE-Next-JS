@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Heart } from '@/components/icons'
 
 const Navbar = () => {
   return (
@@ -52,9 +53,12 @@ const Navbar = () => {
               </div>
             </li>
           </ul>
-          <a href="" className="nav-link text-white">
+          <a href="/cart" className="nav-link text-white">
             My Cart (<span className="navbar__span">12</span>)
           </a>
+          <Link key="2" href="/wishlist" className="nav-link text-white">
+            <Heart fill="red" />
+          </Link>
         </div>
       </div>
     </div>
