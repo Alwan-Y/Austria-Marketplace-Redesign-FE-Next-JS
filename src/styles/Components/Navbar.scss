@@ -6,16 +6,16 @@
   &__item {
     margin-right: 24px;
     font-weight: 200;
-    color: $thirty;
+    color: $primary;
   }
 
   &__item.active a {
-    color: $thirty !important;
+    color: $primary !important;
     font-weight: 600;
   }
 
   &__span {
-    color: $thirty;
+    color: $primary;
     font-weight: 600;
   }
 }

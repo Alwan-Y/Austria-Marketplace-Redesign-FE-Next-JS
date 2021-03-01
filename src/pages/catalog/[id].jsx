@@ -15,19 +15,6 @@ export default function Catalog({ product }) {
       <Head>
         <title>{id} | Austria-next</title>
       </Head>
-<<<<<<< HEAD
-      <Link href="/wishlist">Wishlist</Link>
-      <h1>category : {product.category}</h1>
-      <div className='row'>
-        {product.products.map((product) => (
-          <Card
-            key={product.id}
-            thumb={product.img}
-            title={product.name}
-            price={product.price}
-          />
-        ))}
-=======
       <Breadcrumb name={id} />
       <div className="row">
         {product
@@ -41,7 +28,6 @@ export default function Catalog({ product }) {
               />
             ))
           : null}
->>>>>>> f9a51c6... feat: add detail catalog page & change shop.json
       </div>
     </div>
   );

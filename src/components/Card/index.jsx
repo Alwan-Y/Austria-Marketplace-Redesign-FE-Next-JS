@@ -16,7 +16,7 @@ const Card = ({ thumb, title, price, id }) => {
             <h5 className="card-title card__title">{title}</h5>
 
             <p className="card-text text-muted">IDR. {price}</p>
-            <a href="#" className="btn btn-thirty">
+            <a href="#" className="btn btn-primary">
               Detail
             </a>
           </div>

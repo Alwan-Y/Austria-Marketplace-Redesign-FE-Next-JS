@@ -20,15 +20,15 @@
     }
 
     path {
-      fill: $thirty;
+      fill: $primary;
       stroke-width: 0.5;
-      stroke: $thirty;
+      stroke: $primary;
     }
 
-    @include svg-animation('facebook', $thirty, 60, 0);
-    @include svg-animation('twitter', $thirty, 74, 0);
-    @include svg-animation('youtube', $thirty, 77, 0);
-    @include svg-animation('twitch', $thirty, 70, 0);
+    @include svg-animation('facebook', $primary, 60, 0);
+    @include svg-animation('twitter', $primary, 74, 0);
+    @include svg-animation('youtube', $primary, 77, 0);
+    @include svg-animation('twitch', $primary, 70, 0);
   }
 
   hr {
@@ -53,7 +53,7 @@
   }
 
   &__span {
-    color: $thirty;
+    color: $primary;
   }
 }
 
