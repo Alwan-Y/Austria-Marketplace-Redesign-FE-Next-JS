@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Breadcrumb = ({ category, name }) => {
   return (
-    <nav aria-label="breadcrumb ">
-      <ol className="breadcrumb">
+    <nav aria-label="breadcrumb">
+      <ol className="breadcrumb bg-transparent">
         <li className="breadcrumb-item">
           <Link href="/">
             <a>Home</a>
