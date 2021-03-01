@@ -2,47 +2,47 @@ import type from '../../type';
 
 const initialState = {
   wishlist: [
-    { id: 1, img: '/image1.jpg', name: 'Baju anu', price: 1000},
-    { id: 2, img: '/image.jpg', name: 'Baju unik', price: 1000},
-    { id: 3, img: '/image1.jpg', name: 'Baju unik', price: 1000},
-  ]
-}
+    { id: 1, img: '/image1.jpg', name: 'Baju anu', price: 1000 },
+    { id: 2, img: '/image.jpg', name: 'Baju unik', price: 1000 },
+    { id: 3, img: '/image1.jpg', name: 'Baju unik', price: 1000 },
+  ],
+};
 
 const addToWishlist = (state = initialState.wishlist, { payload }) => {
-  const item = state.find((item) => item.id === payload.id)
+  const item = state.find((item) => item.id === payload.id);
 
   if (item) {
-    return state
+    return state;
   }
 
-  return [ ...state, payload ]
-}
+  return [...state, payload];
+};
 
 const removeFromWishlist = (state = initialState.wishlist, { payload }) => {
-  const item = state.find((item) => item.id === payload.id)
+  const item = state.find((item) => item.id === payload.id);
 
   if (item) {
-    return state.filter((item) => item.id !== payload.id)
+    return state.filter((item) => item.id !== payload.id);
   }
 
-  return state
-}
+  return state;
+};
 
 const wishlist = (state = initialState, action) => {
   switch (action.type) {
     case type.ADD_TO_WISHLIST:
       return {
         ...state,
-        wishlist: addToWishlist(state.wishlist, action)
-      }
+        wishlist: addToWishlist(state.wishlist, action),
+      };
     case type.REMOVE_FROM_WISHLIST:
       return {
         ...state,
-        wishlist: removeFromWishlist(state.wishlist, action)
-      }
+        wishlist: removeFromWishlist(state.wishlist, action),
+      };
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default wishlist
+export default wishlist;

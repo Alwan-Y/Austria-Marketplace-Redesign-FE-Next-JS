@@ -1,8 +1,8 @@
-import { WishlistCard, EmptyWishlist } from "@/components/wishlist"
-import { connect } from 'react-redux'
+import { WishlistCard, EmptyWishlist } from '@/components/wishlist';
+import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
-import Link from 'next/link'
+import Link from 'next/link';
 
 const Wishlist = ({ wishlist, removeFromWishlist }) => {
   /**
@@ -19,25 +19,27 @@ const Wishlist = ({ wishlist, removeFromWishlist }) => {
         <h2>My Wishlist</h2>
         <Link href="/catalog/electronic">Electornic</Link>
         <div className="group d-flex flex-column">
-          {!(wishlist.length) ? (<EmptyWishlist />) : (
+          {!wishlist.length ? (
+            <EmptyWishlist />
+          ) : (
             <div className="row">
-              {
-                wishlist.map((item) => 
-                  <WishlistCard 
-                    onRemove={() => {removeFromWishlist(item)}} 
-                    key={item.id} 
-                    cols="3" 
-                    product={item}
-                  />
-                )
-              }  
+              {wishlist.map((item) => (
+                <WishlistCard
+                  onRemove={() => {
+                    removeFromWishlist(item);
+                  }}
+                  key={item.id}
+                  cols="3"
+                  product={item}
+                />
+              ))}
             </div>
           )}
         </div>
-      </div>      
+      </div>
     </div>
-  )
-}
+  );
+};
 
 const mapStateToProps = (state) => {
   const { wishlist } = state;
@@ -46,7 +48,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  removeFromWishlist: (payload) => dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
+  removeFromWishlist: (payload) =>
+    dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Wishlist);

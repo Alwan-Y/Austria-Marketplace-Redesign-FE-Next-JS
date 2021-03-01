@@ -1,12 +1,12 @@
 import Link from 'next/link';
-import { Heart } from '@/components/icons'
+import { Heart } from '@/components/icons';
 
 const Navbar = () => {
   return (
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="img/32.png" alt="Hefa Store" />
+          <img src="img/32.png" alt="Austria" />
         </a>
         <button
           className="navbar-toggler"
