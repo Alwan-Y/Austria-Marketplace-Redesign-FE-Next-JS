@@ -1,7 +1,15 @@
 import type from '../../type';
 
 const initialState = {
+<<<<<<< HEAD
   wishlist: [],
+=======
+  wishlist: [
+    { id: 1, img: '/image1.jpg', name: 'Baju anu', price: 1000 },
+    { id: 2, img: '/image.jpg', name: 'Baju unik', price: 1000 },
+    { id: 3, img: '/image1.jpg', name: 'Baju unik', price: 1000 },
+  ],
+>>>>>>> succes create carousel
 };
 
 const addToWishlist = (state = initialState.wishlist, { payload }) => {
