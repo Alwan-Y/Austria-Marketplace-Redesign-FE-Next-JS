@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #171717;
+  border-bottom: 1px solid #333;
+  font-family: 'Montserrat';
+
+  &__item {
+    margin-right: 24px;
+    font-weight: 200;
+    color: $thirty;
+  }
+
+  &__item.active a {
+    color: $thirty !important;
+    font-weight: 600;
+  }
+
+  &__span {
+    color: $thirty;
+    font-weight: 600;
+  }
+}
