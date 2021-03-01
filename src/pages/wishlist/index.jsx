@@ -2,6 +2,7 @@ import { WishlistCard, EmptyWishlist } from "@/components/wishlist"
 import { connect } from 'react-redux'
 import Action from '../../redux/action';
 import Type from '../../redux/type';
+import Link from 'next/link'
 
 const Wishlist = ({ wishlist, removeFromWishlist }) => {
   /**
@@ -16,6 +17,7 @@ const Wishlist = ({ wishlist, removeFromWishlist }) => {
     <div className="container">
       <div className="mt-3 mb-20">
         <h2>My Wishlist</h2>
+        <Link href="/catalog/electronic">Electornic</Link>
         <div className="group d-flex flex-column">
           {!(wishlist.length) ? (<EmptyWishlist />) : (
             <div className="row">
@@ -24,7 +26,7 @@ const Wishlist = ({ wishlist, removeFromWishlist }) => {
                   <WishlistCard 
                     onRemove={() => {removeFromWishlist(item)}} 
                     key={item.id} 
-                    cols="4" 
+                    cols="3" 
                     product={item}
                   />
                 )
