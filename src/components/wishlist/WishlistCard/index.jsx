@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { Trash } from '@/components/commons/Navbar/node_modules/@/components/icons';
+import { Trash } from '@/components/icons';
 import Button from '@/components/commons/Button';
 import Image from 'next/image';
 
