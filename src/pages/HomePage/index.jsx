@@ -2,11 +2,19 @@ import { useState } from 'react';
 import { connect } from 'react-redux';
 import Action from '../../redux/action';
 import Type from '../../redux/type';
-import Carousel from '../../components/Carousel'
+import Carousel from '../../components/Carousel';
+import Brands from '../../components/Brands';
+import CategoryList from '../../components/CategoryList';
+import Designer from '../../components/Designer';
 
 const HomePage = () => {
   return (
-    <Carousel />
+    <div>
+      <Carousel />
+      <Brands />
+      <CategoryList />
+      <Designer />
+    </div>
   );
 };
 
