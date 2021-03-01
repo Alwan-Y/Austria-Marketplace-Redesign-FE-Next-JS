@@ -16,7 +16,7 @@ const WishlistCard = ({ cols, product, onRemove }) => {
       ])}
     >
       <div className="card border border-white shadow bg-white rounded">
-        <img className="card-img-top image__cover" src={img} alt="name" />
+        <img className="card-img-top image__cover" src={img} alt={name} />
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text text-muted">Rp. {price}</p>
