@@ -1,6 +1,12 @@
 import classNames from 'classnames';
 
-const CarouselItem = ({ active, title, productDescription, imgPath, classImage }) => {
+const CarouselItem = ({
+  active,
+  title,
+  productDescription,
+  imgPath,
+  classImage,
+}) => {
   return (
     <div className={classNames('carousel-item', { ['active']: active })}>
       <div className="row pt-5 justify-content-center">

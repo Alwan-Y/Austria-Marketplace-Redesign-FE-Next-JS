@@ -1,4 +1,4 @@
-import { Heart } from '@/components/icons';
+import { Heart } from '@/components/commons/Navbar/node_modules/@/components/icons';
 
 const EmptyWishlist = () => (
   <div className="d-flex px-5 py-5 flex flex-column justify-content-center align-items-center">
