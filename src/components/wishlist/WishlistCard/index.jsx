@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 
 const WishlistCard = ({ cols, product, onRemove }) => {
-  const { name, url, price } = product
+  const { name, img, price } = product
   
   return (
   <div className={classNames([
@@ -15,11 +15,10 @@ const WishlistCard = ({ cols, product, onRemove }) => {
     `mb-2`
   ])}>
     <div className="card border border-white shadow bg-white rounded">
-      <Image width={750} height={750} className="card-img-top image__cover" src={url} alt="name" />
+      <Image width={750} height={750} className="card-img-top image__cover" src={img} alt="name" />
         <div className="card-body">
-          <p className="card-text">
-            {name}
-          </p>
+          <h5 className="card-title">{name}</h5>
+          <p className="card-text text-muted">Rp. {price}</p>
           <div className="row">
             <div className="col-sm-9 pr-0">
               <Button 
@@ -30,8 +29,8 @@ const WishlistCard = ({ cols, product, onRemove }) => {
                 Add to Cart
               </Button>
             </div>     
-            <div className="col-sm-3 pt-1" style={{ cursor: "pointer" }} onClick={onRemove}>
-              <Trash color="red"/> 
+            <div className="col-sm-3 pt-1">
+              <Trash color="red" onClick={onRemove} style={{ cursor: "pointer" }}/> 
             </div>                       
           </div>                  
         </div>
