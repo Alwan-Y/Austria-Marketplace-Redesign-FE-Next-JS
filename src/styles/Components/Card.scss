@@ -1,0 +1,13 @@
+.card {
+  &__image {
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: $thirty;
+  }
+
+  .btn-thirty {
+    background-color: $thirty;
+  }
+}

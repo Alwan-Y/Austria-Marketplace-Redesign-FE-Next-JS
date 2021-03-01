@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { getCatalogDetail } from '@/lib/shop';
 
 import styles from '@/styles/Pages/Home.module.scss';
 
@@ -15,9 +16,9 @@ export default function Home() {
         <h1 className="text-info">Hallo word</h1>
         <p className="text-white-50 bg-dark">Nyobak boostrap</p>
         {/* Tes Link */}
-        <Link href="/catalog/electronic">Electornic</Link>
-        <Link href="/catalog/fashion">Fashion</Link>
-        <Link href="/catalog/automotive">Automotive</Link>
+        <Link href="/catalog/mans">Mans</Link>
+        <Link href="/catalog/womans">Womans</Link>
+        <Link href="/catalog/kids">Kids</Link>
       </main>
 
       <footer className={styles.footer}>
