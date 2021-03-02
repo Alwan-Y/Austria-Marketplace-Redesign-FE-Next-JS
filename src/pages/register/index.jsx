@@ -1,7 +1,6 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
-export default function Register () {
+const Register = () => {
     return (
     <div className="register">
       <Head>
@@ -9,22 +8,32 @@ export default function Register () {
       </Head>
       <div className="form">
       <h2>Register</h2>
-        <form onsubmit="event.preventDefault()">
-          <div class="field-wrapper">
-            <input type="text" name="email" placeholder="email"/>
+        <form>
+          <h3>Register</h3>
+
+          <div className="form-group">
+              <label>Email</label>
+              <input type="email" className="form-control" placeholder="Enter email" />
           </div>
-          <div class="field-wrapper">
-            <input type="password" name="password" placeholder="password" autocomplete="new-password"/>
+
+          <div className="form-group">
+              <label>Password</label>
+              <input type="password" className="form-control" placeholder="Enter password" />
           </div>
-          <div class="field-wrapper">
-            <input type="password" name="password2" placeholder="confirm password" autocomplete="new-password"/>
+
+          <div className="form-group">
+              <label>Confirm Password</label>
+              <input type="password" className="form-control" placeholder="Confirm password" />
           </div>
-          <div class="field-wrapper">
-            <input type="submit" onclick=""/>
-          </div>
-          <Link href="/login">Already a user? Login</Link>
-          </form>
+
+          <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
+          <p className="click text-right">
+              Already a user <a href="/login">log in?</a>
+          </p>
+        </form>
       </div>
     </div>
     )
 }
+
+export default Register
