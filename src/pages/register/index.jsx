@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import fire from '../../config/Fire';
+import fire from '../../config/Firebase';
 
 const Register = () => {
   const [email, setEmail] = useState('');
