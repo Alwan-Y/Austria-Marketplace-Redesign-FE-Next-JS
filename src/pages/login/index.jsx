@@ -1,10 +1,10 @@
 import Head from 'next/head';
 import { useState } from 'react';
-import fire from '../../config/Fire';
+import fire from '../../config/Firebase';
 
 const Login = () => {
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
   const signIn = async () => {
     try {
@@ -17,18 +17,17 @@ const Login = () => {
 
         if (!user.emailVerified) {
           const verification = await user.sendEmailVerification();
-    
-          return alert("Verify your email first !!");
+
+          return alert('Verify your email first !!');
         }
-    
-        alert("Succes Login");
+
+        alert('Succes Login');
         // redirect to home page/other
-      
-        
-        return localStorage.setItem("token", user.refreshToken);
+
+        return localStorage.setItem('token', user.refreshToken);
       }
     } catch (e) {
-      alert("Upss something error");
+      alert('Upss something error');
     }
   };
 
@@ -48,7 +47,7 @@ const Login = () => {
             className="form-control"
             placeholder="Enter email"
             onChange={(e) => {
-              setEmail(e.target.value)
+              setEmail(e.target.value);
             }}
           />
           <label>Password</label>
@@ -57,7 +56,7 @@ const Login = () => {
             className="form-control"
             placeholder="Enter password"
             onChange={(e) => {
-              setPassword(e.target.value)
+              setPassword(e.target.value);
             }}
           />
           <div className="custom-control custom-checkbox">
@@ -70,7 +69,11 @@ const Login = () => {
               Remember me
             </label>
           </div>
-          <button type="submit" className="btn btn-dark btn-lg btn-block mt-5" onClick={signIn}>
+          <button
+            type="submit"
+            className="btn btn-dark btn-lg btn-block mt-5"
+            onClick={signIn}
+          >
             Sign in
           </button>
           <p className="click text-right">
