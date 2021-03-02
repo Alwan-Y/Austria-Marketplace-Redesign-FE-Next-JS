@@ -16,17 +16,7 @@ const WishlistCard = ({ cols, product, onRemove }) => {
       ])}
     >
       <div className="card border border-white shadow bg-white rounded">
-<<<<<<< HEAD
         <img className="card-img-top image__cover" src={img} alt="name" />
-=======
-        <Image
-          width={750}
-          height={750}
-          className="card-img-top image__cover"
-          src={img}
-          alt="name"
-        />
->>>>>>> succes create carousel
         <div className="card-body">
           <h5 className="card-title">{name}</h5>
           <p className="card-text text-muted">Rp. {price}</p>
