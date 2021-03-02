@@ -11,8 +11,8 @@ const CarouselItem = ({
     <div className={classNames('carousel-item', { ['active']: active })}>
       <div className="row pt-5 justify-content-center">
         <div className="col-9 col-sm-4 col-md-6 col-lg-5">
-          <h1 className="mb-4">{title}</h1>
-          <p className="mb-4">{productDescription}</p>
+          <h1 className="mb-4 carousel__h1">{title}</h1>
+          <p className="mb-4 carousel__p">{productDescription}</p>
           <a href="" className="btn btn-warning text-white">
             Get It Now
           </a>

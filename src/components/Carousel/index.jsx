@@ -1,10 +1,10 @@
-import CarouselItem from '../commons/CarouselItem';
+import CarouselItem from '../CarouselItem';
 
 const Carousel = () => {
   return (
     <div
       id="carouselExampleControls"
-      className="carousel slide margin"
+      className="carousel slide carousel__margin"
       data-ride="carousel"
     >
       <div className="carousel-inner">
@@ -14,7 +14,7 @@ const Carousel = () => {
             title="Especially For Muslim Men"
             productDescription="Make your days happier and memorable with new clothes"
             imgPath="image1.jpg"
-            classImage="img-fluid-2"
+            classImage="carousel__img-fluid-2"
           />
           <CarouselItem
             title="Especially For Muslim Women"

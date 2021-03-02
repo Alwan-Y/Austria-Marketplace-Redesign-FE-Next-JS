@@ -1,5 +1,3 @@
-import CarouselItem from '../commons/CarouselItem';
-
 import Button from '../commons/Button';
 
 const CategoryList = () => {
