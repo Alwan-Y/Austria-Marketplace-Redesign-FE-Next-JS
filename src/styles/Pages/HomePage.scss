@@ -1,0 +1,38 @@
+.carousel {
+  height: 450px;
+  background-color: #171717;
+  color: white;
+
+  &__h1 {
+    font-family: 'Lora';
+  }
+
+  &__p {
+    font-weight: 200;
+  }
+
+  &__img-fluid-2 {
+    height: 338px;
+  }
+
+  &__margin {
+    margin-top: 55px;
+  }
+}
+
+.designer {
+  &__heading1 {
+    font-family: 'Lora';
+    color: black;
+    font-weight: bold;
+  }
+
+  &__font__paragraph {
+    font-weight: 200;
+    color: #4d4d4d;
+  }
+
+  &__heading5 {
+    color: #171717;
+  }
+}
