@@ -1,28 +1,40 @@
 import Head from 'next/head'
-import Link from 'next/link'
 
-export default function Login () {
-    return (
+const Login = () => {
+  return (
     <div className="login">
       <Head>
         <title>Login</title>
       </Head>
 
-      <div className="form">
-      <h2>Sign in</h2>
-        <form onsubmit="event.preventDefault()">
-          <div class="field-wrapper">
-            <input type="text" name="e-mail" placeholder="e-mail"/>
-          </div>
-          <div class="field-wrapper">
-            <input type="password" name="password" placeholder="password" autocomplete="new-password"/>
-          </div>
-          <div class="field-wrapper">
-            <input type="submit" onclick=""/>
-          </div>
-          <Link href="/register">Not a user? Sign up</Link>
-          </form>
-      </div>
+      <form>
+
+        <h3>Log in</h3>
+
+        <div className="form-group">
+            <label>Email</label>
+            <input type="email" className="form-control" placeholder="Enter email" />
+        </div>
+
+        <div className="form-group">
+            <label>Password</label>
+            <input type="password" className="form-control" placeholder="Enter password" />
+        </div>
+
+        <div className="form-group">
+            <div className="custom-control custom-checkbox">
+                <input type="checkbox" className="custom-control-input" id="customCheck1" />
+                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
+            </div>
+        </div>
+
+        <button type="submit" className="btn btn-dark btn-lg btn-block">Sign in</button>
+        <p className="click text-right">
+            Not a user? Click <a href="/register">here</a>
+        </p>
+      </form>
     </div>
     )
 }
+
+export default Login
