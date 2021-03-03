@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { Heart } from '@/components/icons';
-import Search from '../Search';
+
+import Search from '@/components/Search';
 
 const Navbar = () => {
   return (

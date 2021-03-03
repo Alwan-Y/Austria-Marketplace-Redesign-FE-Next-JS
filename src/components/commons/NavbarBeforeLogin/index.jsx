@@ -1,4 +1,4 @@
-import Search from '../Search';
+import Search from '@/components/Search';
 import Button from '../Button';
 
 const NavbarBeforeLogin = () => {
