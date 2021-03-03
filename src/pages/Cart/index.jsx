@@ -25,17 +25,13 @@ const Cart = () => {
 
       <div className="checkout">
         <div className="container">
-          <div
-            className="row justify-content-between cart__margin"
-          >
+          <div className="row justify-content-between cart__margin">
             <div className="col-lg-6">
               <h3 className="mb-4 cart__color">Your Items</h3>
               <div className="row mb-4">
                 <div className="col-4">
                   <h5 className="m-0">Woman shirt</h5>
-                  <p className="m-0 cart__small">
-                    IDR 100.000
-                  </p>
+                  <p className="m-0 cart__small">IDR 100.000</p>
                 </div>
                 <div className="col-4"></div>
                 <div className="col-2 text-right">
@@ -50,9 +46,7 @@ const Cart = () => {
               <div className="row mb-4">
                 <div className="col-4">
                   <h5 className="m-0">Woman shirt</h5>
-                  <p className="m-0 cart__small">
-                    IDR 100.000
-                  </p>
+                  <p className="m-0 cart__small">IDR 100.000</p>
                 </div>
                 <div className="col-4"></div>
                 <div className="col-2 text-right">
@@ -67,9 +61,7 @@ const Cart = () => {
               <div className="row mb-4">
                 <div className="col-4">
                   <h5 className="m-0">Men's shirts</h5>
-                  <p className="m-0 cart__small">
-                    IDR 100.000
-                  </p>
+                  <p className="m-0 cart__small">IDR 100.000</p>
                 </div>
                 <div className="col-4"></div>
                 <div className="col-2 text-right">
@@ -84,9 +76,7 @@ const Cart = () => {
               <div className="row mb-4">
                 <div className="col-4">
                   <h5 className="m-0">Men's shirts</h5>
-                  <p className="m-0 cart__small">
-                    IDR 100.000
-                  </p>
+                  <p className="m-0 cart__small">IDR 100.000</p>
                 </div>
                 <div className="col-4"></div>
                 <div className="col-2 text-right">
@@ -98,7 +88,6 @@ const Cart = () => {
                   </button>
                 </div>
               </div>
-
             </div>
             <div className="col-lg-5">
               <div className=" rounded-0 cart__checkout__detail">
@@ -168,10 +157,7 @@ const Cart = () => {
 
               <div className="row mt-3">
                 <div className="col">
-                  <button
-                    type="button"
-                    className="btn btn-block black"
-                  >
+                  <button type="button" className="btn btn-block black">
                     Cancel
                   </button>
                 </div>

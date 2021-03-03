@@ -20,7 +20,7 @@ const HomePage = () => {
             imgPath="image1.jpg"
             classImage="img-fluid-2"
           />
-          <CarouselItem 
+          <CarouselItem
             title="Especially For Muslim Women"
             productDescription="Make your days happier and memorable with new clothes"
             imgPath="1.png"

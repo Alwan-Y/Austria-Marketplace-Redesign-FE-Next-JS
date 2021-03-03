@@ -1,5 +1,6 @@
 import Search from '@/components/Search';
 import Button from '../Button';
+import Link from 'next/link';
 
 const NavbarBeforeLogin = () => {
   return (
@@ -40,13 +41,17 @@ const NavbarBeforeLogin = () => {
               <Search />
             </li>
           </ul>
-          <Button type="light" outline="outline" children="Register" />
-          <Button
-            type="primary"
-            outline="outline"
-            children="Login"
-            className="ml-2"
-          />
+          <Link href="/register">
+            <Button type="light" outline="outline" children="Register" />
+          </Link>
+          <Link href="/login">
+            <Button
+              type="primary"
+              outline="outline"
+              children="Login"
+              className="ml-2"
+            />
+          </Link>
         </div>
       </div>
     </div>
