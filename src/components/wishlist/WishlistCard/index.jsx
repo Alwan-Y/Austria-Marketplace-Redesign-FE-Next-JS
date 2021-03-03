@@ -37,7 +37,7 @@ const WishlistCard = ({ cols, product, onRemove }) => {
             </div>
           </div>
         </div>
-      </div>    
+      </div>
     </Link>
   );
 };
