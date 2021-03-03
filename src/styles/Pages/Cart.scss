@@ -1,0 +1,27 @@
+.cart {
+  &__breadcrumb {
+    margin-top: 50px;
+  }
+
+  &__small {
+    color: #B7B7B7
+  }
+
+  &__margin {
+    margin-bottom: 100px
+  }
+
+  &__margin__2 {
+    margin-top: 100px;
+  }
+
+  &__color {
+    color: $primary;
+  }
+
+  &__checkout__detail {
+    background-color: #f6f7fb;
+    border: 1px solid #eaeaea;
+    color: #171717;
+  }
+}
