@@ -7,7 +7,7 @@ import NavbarBeforeLogin from '../components/commons/NavbarBeforeLogin/';
 
 function MyApp({ Component, pageProps }) {
   if (typeof window !== 'undefined') {
-    if (localStorage.getItem("token")) {
+    if (localStorage.getItem('token')) {
       return (
         <Provider store={store}>
           <Navbar />
