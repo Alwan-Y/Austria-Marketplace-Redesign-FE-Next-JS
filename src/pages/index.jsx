@@ -4,6 +4,8 @@ import Brands from '../components/Brands';
 import CategoryList from '../components/CategoryList';
 import Designer from '../components/Designer';
 
+import { getSearch } from '@/lib/shop';
+
 const HomePage = () => {
   return (
     <div>

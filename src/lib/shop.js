@@ -24,3 +24,9 @@ export function getCatalogDetail(id) {
     return catalog.id === id;
   });
 }
+
+export function getSearch(query) {
+  return shop.catalogs.filter((catalog) => {
+    return catalog.name.toLowerCase().includes(query);
+  });
+}
