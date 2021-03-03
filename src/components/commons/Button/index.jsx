@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 
 const Button = ({
   type,
@@ -12,11 +12,11 @@ const Button = ({
   <button
     type="button"
     className={classNames(
-      "button btn",
+      'button btn',
       { [`btn-outline-${type}`]: outline },
       { [`btn-${type}`]: !outline },
       { [`btn-${size}`]: size },
-      { "btn-block": block },
+      { 'btn-block': block },
       className
     )}
     {...rest}

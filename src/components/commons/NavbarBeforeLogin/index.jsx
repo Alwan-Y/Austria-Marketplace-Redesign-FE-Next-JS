@@ -1,12 +1,12 @@
-import Link from 'next/link';
-import { Heart } from '@/components/icons'
+import Search from '../Search';
+import Button from '../Button';
 
-const Navbar = () => {
+const NavbarBeforeLogin = () => {
   return (
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="img/32.png" alt="Hefa Store" />
+          <img src="img/32.png" alt="Austria" />
         </a>
         <button
           className="navbar-toggler"
@@ -37,32 +37,20 @@ const Navbar = () => {
               </a>
             </li>
             <li className="navbar__item">
-              <div className="form-inline">
-                <input
-                  className="form-control mr-sm-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button
-                  className="btn btn-outline-success my-2 my-sm-0"
-                  type="submit"
-                >
-                  Search
-                </button>
-              </div>
+              <Search />
             </li>
           </ul>
-          <a href="/cart" className="nav-link text-white">
-            My Cart (<span className="navbar__span">12</span>)
-          </a>
-          <Link key="2" href="/wishlist" className="nav-link text-white">
-            <Heart fill="red" />
-          </Link>
+          <Button type="light" outline="outline" children="Register" />
+          <Button
+            type="primary"
+            outline="outline"
+            children="Login"
+            className="ml-2"
+          />
         </div>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default NavbarBeforeLogin;
