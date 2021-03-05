@@ -6,14 +6,6 @@ import Head from 'next/head';
 import Breadcrumb from '@/components/Breadcrumb';
 
 const Wishlist = ({ wishlist, removeFromWishlist }) => {
-  /**
-   * @todo:
-   * 1. Get wishlist state from redux --done
-   * 2. Mapping data to show wishlist --done
-   * 3. add to cart event
-   * 4. remove from wishlist event --done
-   */
-
   return (
     <div className="container mt-5 pt-4">
       <Head>
