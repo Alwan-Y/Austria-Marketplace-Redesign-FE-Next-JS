@@ -1,6 +1,11 @@
-const Cart = () => {
+import { connect } from 'react-redux';
+import Action from '@/redux/action';
+import Type from '@/redux/type';
+
+const Cart = (state, remove) => {
   return (
     <div>
+      {console.log(state)}
       <div className="container cart-header cart__margin__2">
         <div className="row mt-5 text-center">
           <div className="col">
@@ -180,4 +185,12 @@ const Cart = () => {
   );
 };
 
-export default Cart;
+const mapStateToProps = (state) => {
+  return state;
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  removeFromCart: (payload) => console.log(payload),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);

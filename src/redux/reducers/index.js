@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux';
 import wishlist from '../reducers/wishlist';
 import Type from '../type';
+import cart from '../reducers/cart';
 
 const initialState = {
   items: [1, 2, 3, 4, 5],
@@ -25,4 +26,5 @@ const reducer = (state = initialState, action) => {
 export default combineReducers({
   wishlist,
   reducer,
+  cart,
 });
