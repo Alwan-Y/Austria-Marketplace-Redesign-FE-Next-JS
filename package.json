@@ -9,6 +9,10 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,scss}\""
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "bootstrap": "^4.6.0",
     "classnames": "^2.2.6",
     "firebase": "^8.2.9",

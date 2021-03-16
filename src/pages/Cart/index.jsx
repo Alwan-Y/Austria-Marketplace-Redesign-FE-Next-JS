@@ -1,103 +1,42 @@
 import { connect } from 'react-redux';
 import Action from '@/redux/action';
 import Type from '@/redux/type';
+import Heading3 from '@/components/commons/Heading3';
+import Breadcrumb from '@/components/Breadcrumb';
+import CartItems from '@/components/commons/CartItems';
 
 const Cart = (state, remove) => {
   return (
     <div>
       {console.log(state)}
       <div className="container cart-header cart__margin__2">
-        <div className="row mt-5 text-center">
+        <div className="mt-5 pt-4">
+          <Breadcrumb name="Cart Checkout" />
+        </div>
+        <div className="row text-center mb-5 mt-5">
           <div className="col">
-            <h3>Your Cart</h3>
+            <Heading3>Your Cart</Heading3>
             <p>Make sure your goods are paid off in full</p>
           </div>
         </div>
-      </div>
-
-      <div className="container">
-        <nav>
-          <ol className="breadcrumb bg-transparent pl-0 cart__breadcrumb">
-            <li className="breadcrumb-item">
-              <a href="#">Home</a>
-            </li>
-            <li className="breadcrumb-item active" aria-current="page">
-              Cart Checkout
-            </li>
-          </ol>
-        </nav>
       </div>
 
       <div className="checkout">
         <div className="container">
           <div className="row justify-content-between cart__margin">
             <div className="col-lg-6">
-              <h3 className="mb-4 cart__color">Your Items</h3>
-              <div className="row mb-4">
-                <div className="col-4">
-                  <h5 className="m-0">Woman shirt</h5>
-                  <p className="m-0 cart__small">IDR 100.000</p>
-                </div>
-                <div className="col-4"></div>
-                <div className="col-2 text-right">
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-danger text-white"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
-              <div className="row mb-4">
-                <div className="col-4">
-                  <h5 className="m-0">Woman shirt</h5>
-                  <p className="m-0 cart__small">IDR 100.000</p>
-                </div>
-                <div className="col-4"></div>
-                <div className="col-2 text-right">
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-danger text-white"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
-              <div className="row mb-4">
-                <div className="col-4">
-                  <h5 className="m-0">Men's shirts</h5>
-                  <p className="m-0 cart__small">IDR 100.000</p>
-                </div>
-                <div className="col-4"></div>
-                <div className="col-2 text-right">
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-danger text-white"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
-              <div className="row mb-4">
-                <div className="col-4">
-                  <h5 className="m-0">Men's shirts</h5>
-                  <p className="m-0 cart__small">IDR 100.000</p>
-                </div>
-                <div className="col-4"></div>
-                <div className="col-2 text-right">
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-danger text-white"
-                  >
-                    Delete
-                  </button>
-                </div>
-              </div>
+              <Heading3 className="mb-4 cart__color">Your Items</Heading3>
+              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
+              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
+              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
+              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
             </div>
             <div className="col-lg-5">
               <div className=" rounded-0 cart__checkout__detail">
                 <div className="card-body">
-                  <h3 className="card-title cart__color">Cost Information</h3>
+                  <Heading3 className="card-title cart__color">
+                    Cost Information
+                  </Heading3>
                   <div className="row mb-3">
                     <div className="col">
                       <h6 className="m-0">Woman shirt</h6>
