@@ -6,7 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import CartItems from '@/components/commons/CartItems';
 import Courier from '@/components/Courier';
 import CartSummary from '@/components/CartSummary';
-import Button from '@/components/commons/Button'
+import Button from '@/components/commons/Button';
 
 const Cart = (state, remove) => {
   return (
@@ -47,8 +47,6 @@ const Cart = (state, remove) => {
                   <Button
                     type="button"
                     className="btn btn-secondary btn-block text-white"
-                    data-toggle="modal"
-                    data-target="#checkoutModal"
                   >
                     Checkout
                   </Button>

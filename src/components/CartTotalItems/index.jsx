@@ -1,11 +1,6 @@
-import classNames from "classnames";
+import classNames from 'classnames';
 
-const CartCardItems = ({
-  name,
-  informationItem,
-  amount,
-  className
-}) => {
+const CartCardItems = ({ name, informationItem, amount, className }) => {
   return (
     <div className="row mb-3">
       <div className="col">
@@ -13,7 +8,9 @@ const CartCardItems = ({
         <small className="cart__small">{informationItem}</small>
       </div>
       <div className="col d-flex justify-content-end">
-        <h6 className={classNames('m-0 align-self-center', className)}>{amount}</h6>
+        <h6 className={classNames('m-0 align-self-center', className)}>
+          {amount}
+        </h6>
       </div>
     </div>
   );
