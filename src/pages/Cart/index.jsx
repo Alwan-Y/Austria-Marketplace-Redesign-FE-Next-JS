@@ -6,6 +6,7 @@ import Breadcrumb from '@/components/Breadcrumb';
 import CartItems from '@/components/commons/CartItems';
 import Courier from '@/components/Courier';
 import CartSummary from '@/components/CartSummary';
+import Button from '@/components/commons/Button'
 
 const Cart = (state, remove) => {
   return (
@@ -43,19 +44,14 @@ const Cart = (state, remove) => {
               <CartSummary />
               <div className="row mt-3">
                 <div className="col">
-                  <button type="button" className="btn btn-block black">
-                    Cancel
-                  </button>
-                </div>
-                <div className="col">
-                  <button
+                  <Button
                     type="button"
-                    className="btn btn-warning btn-block text-white"
+                    className="btn btn-secondary btn-block text-white"
                     data-toggle="modal"
                     data-target="#checkoutModal"
                   >
                     Checkout
-                  </button>
+                  </Button>
                 </div>
               </div>
             </div>
