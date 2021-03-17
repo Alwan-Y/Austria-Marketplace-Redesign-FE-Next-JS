@@ -1,3 +1,5 @@
+import Button from '@/components/commons/Button';
+import Input from '@/components/commons/Input';
 import Head from 'next/head';
 import { useState } from 'react';
 import fire from '../../config/Firebase';
@@ -41,43 +43,31 @@ const Login = () => {
         <h3>Log in</h3>
 
         <div className="form-group">
-          <label>Email</label>
-          <input
+          <Input
             type="email"
             className="form-control"
-            placeholder="Enter email"
+            placeholder="E-mail"
             onChange={(e) => {
-              setEmail(e.target.value);
+              console.log(e.target.value);
             }}
           />
-          <label>Password</label>
-          <input
+          <Input
             type="password"
             className="form-control"
-            placeholder="Enter password"
+            placeholder="Password"
             onChange={(e) => {
-              setPassword(e.target.value);
+              console.log(e.target.value);
             }}
           />
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
-            />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
-          </div>
-          <button
-            type="submit"
-            className="btn btn-dark btn-lg btn-block mt-5"
-            onClick={signIn}
+          <p className="click text-right">Forget password</p>
+          <Button
+            type="button"
+            className="btn btn-secondary btn-block text-white"
           >
-            Sign in
-          </button>
+            Login
+          </Button>
           <p className="click text-right">
-            Not a user? Click <a href="/register">here</a>
+            Don't have account? <a href="/register">Sign up</a>
           </p>
         </div>
       </div>
