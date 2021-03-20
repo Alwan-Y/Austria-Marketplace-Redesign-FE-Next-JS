@@ -1,6 +1,6 @@
 .login {
   &__position {
-    margin-top: 17vh;
+    margin-top: 10px;
 
     @include media-breakpoint-up(sm) {
       margin-top: 100px;
@@ -18,5 +18,25 @@
 
   &__margin__2 {
     margin-top: -20px;
+  }
+
+  &__martop {
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+    @include media-breakpoint-up(sm) {
+      margin-top: 100px;
+      margin-bottom: 150px;
+    }
+  }
+
+  &__height {
+    display: inline-block;
+    height: 40px;
+
+    @include media-breakpoint-up(sm) {
+      height: 50px;
+      margin-top: 20px;
+    }
   }
 }

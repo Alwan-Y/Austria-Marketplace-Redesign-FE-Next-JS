@@ -15,9 +15,31 @@
   }
 }
 
+<<<<<<< HEAD
 .container {
   padding-top: 45px;
   padding-bottom: 36px;
+=======
+.footer {
+  &__copyright {
+    font-size: 14px;
+    color: $thirty;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      transition: all 0.8s ease 0s;
+      color: $secondary;
+    }
+  }
+
+  &__span {
+    color: $primary;
+  }
+>>>>>>> succes redesign login
 }
 
 
