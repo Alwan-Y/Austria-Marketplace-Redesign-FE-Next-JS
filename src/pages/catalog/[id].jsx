@@ -19,13 +19,9 @@ export default function Catalog({ product }) {
       <div className="row">
         {product
           ? product.map((product) => (
-              <Card
-                key={product.id}
-                id={product.id}
-                thumb={product.img}
-                title={product.name}
-                price={product.price}
-              />
+                <Card
+                  item = {product}
+                />
             ))
           : null}
       </div>

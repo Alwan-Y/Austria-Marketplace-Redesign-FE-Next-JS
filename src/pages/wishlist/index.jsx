@@ -5,7 +5,7 @@ import Type from '@/redux/type';
 import Head from 'next/head';
 import Breadcrumb from '@/components/Breadcrumb';
 
-const Wishlist = ({ wishlist, removeFromWishlist }) => {
+const Wishlist = ({ wishlist, removeFromWishlist, addToCart }) => {
   return (
     <div className="container mt-5 pt-4">
       <Head>
@@ -19,12 +19,14 @@ const Wishlist = ({ wishlist, removeFromWishlist }) => {
           <div className="row">
             {wishlist.map((item) => (
               <WishlistCard
+                key={item.id}
+                product={item}
                 onRemove={() => {
                   removeFromWishlist(item);
                 }}
-                key={item.id}
-                cols="3"
-                product={item}
+                onAddToCart={() => {
+                  addToCart()
+                }}
               />
             ))}
           </div>
