@@ -5,6 +5,7 @@ import { useState } from 'react';
 import fire from '../../config/Firebase';
 
 const Login = () => {
+  const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -38,40 +39,56 @@ const Login = () => {
       <Head>
         <title>Login</title>
       </Head>
-
-      <div className="form">
-        <h3>Log in</h3>
-
-        <div className="form-group">
-          <Input
-            type="email"
-            className="form-control"
-            placeholder="E-mail"
-            onChange={(e) => {
-              console.log(e.target.value);
-            }}
-          />
-          <Input
-            type="password"
-            className="form-control"
-            placeholder="Password"
-            onChange={(e) => {
-              console.log(e.target.value);
-            }}
-          />
-          <p className="click text-right">Forget password</p>
-          <Button
-            type="button"
-            className="btn btn-secondary btn-block text-white"
-          >
-            Login
-          </Button>
-          <p className="click text-right">
-            Don't have account? <a href="/register">Sign up</a>
-          </p>
+        <div className="container login__martop">
+          <div className="row login__position">
+            <div className="col-lg"></div>
+            <div className="col-lg">
+              <Input
+                htmlFor="email"
+                label="LOG IN"
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                className={`form-control ${
+                  error ? 'is-invalid' : ''
+                } login__form`}
+                classNameLabel="login__label login__margin__1 text-center"
+                value={email}
+                onChange={(e) => {
+                  setError(false);
+                  setEmail(e.target.value);
+                }}
+              />
+              <Input
+                htmlFor="password"
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                className={`form-control ${
+                  error ? 'is-invalid' : ''
+                } login__form login__margin__2`}
+                classNameLabel="login__label"
+                value={password}
+                onChange={(e) => {
+                  setError(false);
+                  setPassword(e.target.value);
+                }}
+              />
+              <div className="row">
+                <div className="col-lg">
+                  <Button
+                    type="button"
+                    className="btn btn-secondary btn-block text-white"
+                  >
+                    Login
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div className="col"></div>
+          </div>
         </div>
       </div>
-    </div>
   );
 };
 
