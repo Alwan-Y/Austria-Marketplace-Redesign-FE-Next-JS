@@ -1,12 +1,29 @@
-const Input = ({ type, className, placeholder, onChange }) => {
-  return (
+const Input = ({
+  htmlFor,
+  label,
+  type,
+  id,
+  placeholder,
+  value,
+  onChange,
+  onClick,
+  className,
+  classNameLabel,
+}) => (
+  <div className="form-group">
+    <label className={classNameLabel} htmlFor={htmlFor}>
+      {label}
+    </label>
     <input
       type={type}
-      className={className}
+      id={id}
       placeholder={placeholder}
+      value={value}
       onChange={onChange}
+      onClick={onClick}
+      className={className}
     />
-  );
-};
+  </div>
+);
 
 export default Input;
