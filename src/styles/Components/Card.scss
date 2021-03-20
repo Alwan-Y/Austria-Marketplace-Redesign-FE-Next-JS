@@ -3,4 +3,20 @@
     cursor: pointer;
     color: $primary;
   }
+
+  &__divider {
+    border-top: 0.5px solid rgba(26, 26, 26, 0.4);
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.875rem
+  }
+
+  &__text {
+    color: $primary;
+    font-weight: 500;
+    font-size: 0.875rem
+  }
 }
