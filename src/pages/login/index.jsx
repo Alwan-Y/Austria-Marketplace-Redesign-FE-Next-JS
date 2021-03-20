@@ -3,6 +3,7 @@ import Input from '@/components/commons/Input';
 import Head from 'next/head';
 import { useState } from 'react';
 import fire from '../../config/Firebase';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const Login = () => {
   const [error, setError] = useState(false);
@@ -39,56 +40,65 @@ const Login = () => {
       <Head>
         <title>Login</title>
       </Head>
-        <div className="container login__martop">
-          <div className="row login__position">
-            <div className="col-lg"></div>
-            <div className="col-lg">
-              <Input
-                htmlFor="email"
-                label="LOG IN"
-                type="email"
-                id="email"
-                placeholder="Enter email"
-                className={`form-control ${
-                  error ? 'is-invalid' : ''
-                } login__form`}
-                classNameLabel="login__label login__margin__1 text-center"
-                value={email}
-                onChange={(e) => {
-                  setError(false);
-                  setEmail(e.target.value);
-                }}
-              />
-              <Input
-                htmlFor="password"
-                type="password"
-                id="password"
-                placeholder="Enter Password"
-                className={`form-control ${
-                  error ? 'is-invalid' : ''
-                } login__form login__margin__2`}
-                classNameLabel="login__label"
-                value={password}
-                onChange={(e) => {
-                  setError(false);
-                  setPassword(e.target.value);
-                }}
-              />
-              <div className="row">
-                <div className="col-lg">
-                  <Button
-                    type="button"
-                    className="btn btn-secondary btn-block text-white"
-                  >
-                    Login
-                  </Button>
-                </div>
-              </div>
-            </div>
-            <div className="col"></div>
-          </div>
+
+      <div className="container cart-header cart__margin__2">
+        <div className="mt-5 pt-4">
+          <Breadcrumb name="Login" />
         </div>
       </div>
+
+      <div className="container login__martop">
+        <div className="row  login__position">
+          <div className="col-lg"></div>
+          <div className="col-lg-6 text-center">
+            <Input
+              htmlFor="email"
+              label="LOG IN"
+              type="email"
+              id="email"
+              placeholder="E-mail"
+              className={`form-control login__height ${
+                error ? 'is-invalid' : ''
+              } login__form`}
+              classNameLabel="login__label login__margin__1 text-center"
+              value={email}
+              onChange={(e) => {
+                setError(false);
+                setEmail(e.target.value);
+              }}
+            />
+            <Input
+              htmlFor="password"
+              type="password"
+              id="password"
+              placeholder="Password"
+              className={`form-control login__height ${
+                error ? 'is-invalid' : ''
+              } login__form login__margin__2`}
+              classNameLabel="login__label"
+              value={password}
+              onChange={(e) => {
+                setError(false);
+                setPassword(e.target.value);
+              }}
+            />
+            <div className="row">
+              <div className="col-lg">
+                <Button
+                  type="button"
+                  className="btn btn-secondary btn-block text-white"
+                  size="lg"
+                  onClick={signIn}
+                >
+                  Login
+                </Button>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg"></div>
+        </div>
+      </div>
+    </div>
   );
 };
 
