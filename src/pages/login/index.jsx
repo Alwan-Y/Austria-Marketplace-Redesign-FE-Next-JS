@@ -86,12 +86,20 @@ const Login = () => {
               <div className="col-lg">
                 <Button
                   type="button"
-                  className="btn btn-secondary btn-block text-white"
+                  className="btn btn-secondary btn-block text-white mt-2"
                   size="lg"
                   onClick={signIn}
                 >
                   Login
                 </Button>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <p className="text-right login__text">
+                  Don't Have Account ?
+                  <span className="login__span"> Sign up</span>
+                </p>
               </div>
             </div>
           </div>
