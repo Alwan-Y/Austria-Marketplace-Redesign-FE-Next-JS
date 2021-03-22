@@ -21,11 +21,11 @@ function Detail({ product, addToWishlist, addToCartList }) {
           <h1>{product.name}</h1>
           <h5 className="text-muted">IDR : {product.price}</h5>
           <div className="mt-4">
-            <button 
-            className="btn btn-primary mr-4"
-            onClick={() => {
-              addToCartList(product)
-            }}
+            <button
+              className="btn btn-primary mr-4"
+              onClick={() => {
+                addToCartList(product);
+              }}
             >
               Add to Cart
             </button>
