@@ -25,7 +25,6 @@ const Wishlist = ({ wishlist, removeFromWishlist, addItemToCart }) => {
                   removeFromWishlist(item);
                 }}
                 onAddToCart={() => {
-                  console.log(item)
                   addItemToCart(item);
                 }}
               />
