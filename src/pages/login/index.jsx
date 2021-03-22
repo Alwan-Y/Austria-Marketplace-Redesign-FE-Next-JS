@@ -1,8 +1,12 @@
+import Button from '@/components/commons/Button';
+import Input from '@/components/commons/Input';
 import Head from 'next/head';
 import { useState } from 'react';
 import fire from '../../config/Firebase';
+import Breadcrumb from '@/components/Breadcrumb';
 
 const Login = () => {
+  const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -37,48 +41,69 @@ const Login = () => {
         <title>Login</title>
       </Head>
 
-      <div className="form">
-        <h3>Log in</h3>
+      <div className="container cart-header cart__margin__2">
+        <div className="mt-5 pt-4">
+          <Breadcrumb name="Login" />
+        </div>
+      </div>
 
-        <div className="form-group">
-          <label>Email</label>
-          <input
-            type="email"
-            className="form-control"
-            placeholder="Enter email"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
-          <label>Password</label>
-          <input
-            type="password"
-            className="form-control"
-            placeholder="Enter password"
-            onChange={(e) => {
-              setPassword(e.target.value);
-            }}
-          />
-          <div className="custom-control custom-checkbox">
-            <input
-              type="checkbox"
-              className="custom-control-input"
-              id="customCheck1"
+      <div className="container login__martop">
+        <div className="row  login__position">
+          <div className="col-lg"></div>
+          <div className="col-lg-6 text-center">
+            <Input
+              htmlFor="email"
+              label="LOG IN"
+              type="email"
+              id="email"
+              placeholder="E-mail"
+              className={`form-control login__height ${
+                error ? 'is-invalid' : ''
+              } login__form`}
+              classNameLabel="login__label login__margin__1 text-center"
+              value={email}
+              onChange={(e) => {
+                setError(false);
+                setEmail(e.target.value);
+              }}
             />
-            <label className="custom-control-label" htmlFor="customCheck1">
-              Remember me
-            </label>
+            <Input
+              htmlFor="password"
+              type="password"
+              id="password"
+              placeholder="Password"
+              className={`form-control login__height ${
+                error ? 'is-invalid' : ''
+              } login__form login__margin__2`}
+              classNameLabel="login__label"
+              value={password}
+              onChange={(e) => {
+                setError(false);
+                setPassword(e.target.value);
+              }}
+            />
+            <div className="row">
+              <div className="col-lg">
+                <Button
+                  type="button"
+                  className="btn btn-secondary btn-block text-white mt-2"
+                  size="lg"
+                  onClick={signIn}
+                >
+                  Login
+                </Button>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <p className="text-right login__text">
+                  Don't Have Account ?
+                  <span className="login__span"> Sign up</span>
+                </p>
+              </div>
+            </div>
           </div>
-          <button
-            type="submit"
-            className="btn btn-dark btn-lg btn-block mt-5"
-            onClick={signIn}
-          >
-            Sign in
-          </button>
-          <p className="click text-right">
-            Not a user? Click <a href="/register">here</a>
-          </p>
+          <div className="col-lg"></div>
         </div>
       </div>
     </div>

@@ -1,13 +1,12 @@
 import Head from 'next/head';
 import { connect } from 'react-redux';
-
 import Action from '@/redux/action';
 import Type from '@/redux/type';
 import { getAllId, getCatalogDetail } from '@/lib/shop';
 
 import Breadcrumb from '@/components/Breadcrumb';
 
-function Detail({ product, addToWishlist }) {
+function Detail({ product, addToWishlist, addToCartList }) {
   return (
     <div className="container my-5 pt-4 detail">
       <Head>
@@ -22,7 +21,12 @@ function Detail({ product, addToWishlist }) {
           <h1>{product.name}</h1>
           <h5 className="text-muted">IDR : {product.price}</h5>
           <div className="mt-4">
-            <button className="btn btn-primary mr-4                                                                                                                                                                                                                             ">
+            <button
+              className="btn btn-primary mr-4"
+              onClick={() => {
+                addToCartList(product);
+              }}
+            >
               Add to Cart
             </button>
             <button
@@ -41,6 +45,7 @@ function Detail({ product, addToWishlist }) {
 }
 const mapDispatchToProps = (dispatch) => ({
   addToWishlist: (payload) => dispatch(Action(Type.ADD_TO_WISHLIST, payload)),
+  addToCartList: (payload) => dispatch(Action(Type.ADD_TO_CART, payload)),
 });
 
 export async function getStaticPaths() {
