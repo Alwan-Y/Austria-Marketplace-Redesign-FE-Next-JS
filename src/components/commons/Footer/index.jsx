@@ -3,8 +3,8 @@ import Link from 'next/link';
 const Footer = () => {
     return (
         <>
-            <div className="Footer container-fluid text-white">
-                <div className="container">
+            <div className="Footer container-fluid text-white foot-container">
+                <div className="container ">
                     <div className="row">
                         <div className="col-5"></div>
                         <div className="col-2"></div>
@@ -87,5 +87,4 @@ const Footer = () => {
         </>
     );
 }
- 
 export default Footer;

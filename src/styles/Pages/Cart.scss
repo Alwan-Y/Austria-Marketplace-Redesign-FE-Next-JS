@@ -12,7 +12,7 @@
   }
 
   &__margin__2 {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 
   &__color {
@@ -23,5 +23,23 @@
     background-color: #f6f7fb;
     border: 1px solid #eaeaea;
     color: #171717;
+  }
+
+  &__breadcrumb {
+    margin-left: 11%;
+  }
+
+  &__minus {
+    background-color: #eaeaef;
+    color: white;
+  }
+
+  &__plus {
+    background-color: green;
+    color: white;
+  }
+
+  &__ {
+    color: white;
   }
 }
