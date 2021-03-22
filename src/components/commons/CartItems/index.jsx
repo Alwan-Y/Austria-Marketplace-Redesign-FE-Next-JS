@@ -6,7 +6,14 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '@/components/commons/Button';
 
-const CartItems = ({ nameItems, amountItems }) => {
+const CartItems = ({
+  nameItems,
+  amountItems,
+  quantity,
+  onClickPlus,
+  onClickMinus,
+  onClickDelete,
+}) => {
   return (
     <div className="row mb-4">
       <div className="col-2">
@@ -17,16 +24,21 @@ const CartItems = ({ nameItems, amountItems }) => {
         <p className="m-0 cart__small">{amountItems}</p>
       </div>
       <div className="col-4">
-        <Button size="sm" className="cart__minus">
+        <Button size="sm" className="cart__minus" onClick={onClickMinus}>
           <FontAwesomeIcon icon={faMinusCircle} />
         </Button>
-        <span className="mx-2">20</span>
-        <Button size="sm" className="cart__plus">
+        <span className="mx-2">{quantity}</span>
+        <Button size="sm" className="cart__plus" onClick={onClickPlus}>
           <FontAwesomeIcon icon={faPlusCircle} />
         </Button>
       </div>
       <div className="col-2 text-right">
-        <Button size="sm" type="danger" className="cart__delete">
+        <Button
+          size="sm"
+          type="danger"
+          className="cart__delete"
+          onClick={onClickDelete}
+        >
           <FontAwesomeIcon icon={faTimesCircle} />
         </Button>
       </div>

@@ -36,15 +36,15 @@ test('Button Outline', () => {
 });
 
 test('Button size', () => {
-  const {container} = render(<Button className="btn btn-lg">Submit</Button>)
+  const { container } = render(<Button className="btn btn-lg">Submit</Button>);
 
-  expect(container.firstChild).toHaveClass('btn btn-lg')
-})
+  expect(container.firstChild).toHaveClass('btn btn-lg');
+});
 
 test('Button Block', () => {
-  const {container} = render(<Button className="btn btn-block">Submit</Button>)
+  const { container } = render(
+    <Button className="btn btn-block">Submit</Button>
+  );
 
-  expect(container.firstChild).toHaveClass('btn btn-block')
-})
-
-
+  expect(container.firstChild).toHaveClass('btn btn-block');
+});

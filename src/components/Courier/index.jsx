@@ -1,4 +1,4 @@
-const Courier = () => {
+const Courier = ({ onClickJNE, onClickJNT }) => {
   return (
     <div>
       <div className="form-check">
@@ -11,6 +11,7 @@ const Courier = () => {
               id="exampleRadios1"
               value="option1"
               defaultChecked
+              onClick={onClickJNE}
             />
           </div>
           <div className="col-2">
@@ -20,7 +21,7 @@ const Courier = () => {
             <label className="form-check-label" htmlFor="exampleRadios1">
               JNE
               <br />
-              IDR 14.000
+              14000
             </label>
           </div>
         </div>
@@ -33,6 +34,7 @@ const Courier = () => {
               id="exampleRadios1"
               value="option1"
               defaultChecked
+              onClick={onClickJNT}
             />
           </div>
           <div className="col-2">
@@ -42,7 +44,7 @@ const Courier = () => {
             <label className="form-check-label" htmlFor="exampleRadios1">
               J&T
               <br />
-              IDR 14.000
+              12000
             </label>
           </div>
         </div>

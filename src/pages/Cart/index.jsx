@@ -7,11 +7,16 @@ import CartItems from '@/components/commons/CartItems';
 import Courier from '@/components/Courier';
 import CartSummary from '@/components/CartSummary';
 import Button from '@/components/commons/Button';
+import { useState } from 'react';
 
-const Cart = (state, remove) => {
+const Cart = ({items, addIncrement, removeIncrement, removeItem}) => {
+  const [ courier, setCourier] = useState(0)
+  const [ courireName, setCourierName ] = useState("") 
+  const [ tax, setTax ] = useState(0)
+  const [ amountTotal, setAmountTotal ] = useState(0)
+
   return (
     <div>
-      {console.log(state)}
       <div className="container cart-header cart__margin__2">
         <div className="mt-5 pt-4">
           <Breadcrumb name="Cart Checkout" />
@@ -29,19 +34,39 @@ const Cart = (state, remove) => {
           <div className="row justify-content-between cart__margin">
             <div className="col-lg-6">
               <Heading3 className="mb-4 cart__color">Your Items</Heading3>
-              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
-              <hr />
-              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
-              <hr />
-              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
-              <hr />
-              <CartItems nameItems="Jeans Papp" amountItems="IDR 200.000.000" />
-              <hr />
+              {items.map((val, idx) => {
+                return (
+                  <CartItems
+                    nameItems={val.name}
+                    amountItems={val.price}
+                    quantity={val.quantity}
+                    key={idx}
+                    onClickPlus={() => {
+                      addIncrement(val)
+                    }}
+                    onClickMinus={() => {
+                      removeIncrement(val)
+                    }}
+                    onClickDelete={() => {
+                      removeItem(val)
+                    }}
+                  />
+                );
+              })}
               <Heading3 className="mt-5 mb-4 cart__color">Courier</Heading3>
-              <Courier />
+              <Courier 
+              onClickJNE={() => {
+                setCourier(14000)
+                setCourierName("JNE")
+              }}
+              onClickJNT={() => {
+                setCourier(12000)
+                setCourierName("JNT")
+              }}
+              />
             </div>
             <div className="col-lg-5">
-              <CartSummary />
+              <CartSummary courier={courier} nameCourier={courireName} items={items}/>
               <div className="row mt-3">
                 <div className="col">
                   <Button
@@ -61,11 +86,15 @@ const Cart = (state, remove) => {
 };
 
 const mapStateToProps = (state) => {
-  return state;
+  const { cart } = state;
+
+  return cart;
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  removeFromCart: (payload) => console.log(payload),
-});
+  addIncrement: (payload) => dispatch(Action(Type.ADD_TO_CART, payload)),
+  removeIncrement: (payload) => dispatch(Action(Type.REMOVE_INCREMENT, payload)),
+  removeItem: (payload) => dispatch(Action(Type.REMOVE_FROM_CART, payload))
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cart);
