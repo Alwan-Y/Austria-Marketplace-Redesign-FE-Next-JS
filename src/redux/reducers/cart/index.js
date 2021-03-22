@@ -5,36 +5,29 @@ const initialState = {
 };
 
 const addToCart = (state = initialState.items, { payload }) => {
-  // console.log(state)
+  console.log(state)
 
-  const item = state.find(
-    (item) => item.payload.name === payload.name || item.name === payload.name
-  );
+  const item = state.find((item) => item.id === payload.id);
 
   if (item) {
-    const items = state.filter((item) => item.payload.name !== payload.name);
-    console.log(items);
-
-    let quantity = item.quantity++;
+    const items = state.filter(item => item.id !== payload.id)
 
     const newItem = {
-      item,
-      quantity: quantity,
-      totalPrice: item.totalPrice * quantity,
-    };
+      ...item,
+      quantity: item.quantity + 1
+    }
 
-    // console.log(newItem)
-    const newState = items.concat(newItem);
-    console.log(newState);
-  }
+    return [...items, newItem]
+  } 
 
   const newPayload = {
-    payload,
-    quantity: 1,
-    totalPrice: payload.price,
-  };
+    ...payload,
+    quantity: 1
+  }
 
-  return [...state, newPayload];
+  console.log([...state, newPayload])
+
+  return [...state, newPayload]
 };
 
 const removeFromCart = (state, payload) => {
