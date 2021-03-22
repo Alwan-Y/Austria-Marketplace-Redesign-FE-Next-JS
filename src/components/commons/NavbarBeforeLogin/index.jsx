@@ -53,10 +53,10 @@ const NavbarBeforeLogin = () => {
               <Search />
             </li>
           </ul>
-          <Link href="/register">
+          <Link href={ROUTES.REGISTER}>
             <Button type="light" outline="outline" children="Register" />
           </Link>
-          <Link href="/login">
+          <Link href={ROUTES.LOGIN}>
             <Button
               type="primary"
               outline="outline"

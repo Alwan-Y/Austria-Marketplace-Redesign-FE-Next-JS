@@ -54,10 +54,12 @@ const Navbar = () => {
               <Search />
             </li>
           </ul>
-          <a href="/cart" className="nav-link text-white">
-            My Cart (<span className="navbar__span">12</span>)
-          </a>
-          <Link key="2" href="/wishlist" className="nav-link text-white">
+          <Link href={ROUTES.CART} >
+            <a className="nav-link text-white">
+              My Cart (<span className="navbar__span">12</span>)
+            </a>          
+          </Link>
+          <Link key="2" href={ROUTES.WISHLIST} className="nav-link text-white">
             <Heart fill="red" />
           </Link>
         </div>
