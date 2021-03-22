@@ -4,7 +4,7 @@ const ROUTES = {
   REGISTER: "/register",
   LOGIN: "/login",
   WISHLIST: "/wishlist",
-  CART: "/cart",
+  CART: "/Cart",
   CATALOG: "/catalog",
 };
 
