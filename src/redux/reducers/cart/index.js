@@ -1,29 +1,39 @@
 import type from '../../type';
 
 const initialState = {
-  items: [
-    {
-      name: 'baju',
-      amount: 100000,
-    },
-  ],
-  amount: 0,
+  items: []
 };
 
-const addToCart = (state, payload) => {
-  const item = state.items.find((item) => item.name === payload.name);
+const addToCart = (state = initialState.items, { payload }) => {
+  // console.log(state)
+
+  const item = state.find((item) => item.payload.name === payload.name || item.name === payload.name);
 
   if (item) {
-    return Object.assign({}, state, {
-      items: state.itmes,
-      amount: state.amount + payload.amount,
-    });
+    const items = state.filter(item => item.payload.name !== payload.name)
+    console.log(items)
+
+    let quantity = item.quantity++
+
+    const newItem = {
+      item,
+      quantity: quantity,
+      totalPrice: item.totalPrice * quantity 
+    }
+
+    // console.log(newItem)
+    const newState = items.concat(newItem)
+    console.log(newState)
+  
   }
 
-  return Object.assign({}, state, {
-    items: state.itmes.push(payload.name),
-    amount: state.amount + payload.amount,
-  });
+  const newPayload = {
+    payload,
+    quantity: 1,
+    totalPrice: payload.price
+  }
+
+  return [...state, newPayload]
 };
 
 const removeFromCart = (state, payload) => {
@@ -33,7 +43,10 @@ const removeFromCart = (state, payload) => {
 const cart = (state = initialState, action) => {
   switch (action.type) {
     case type.ADD_TO_CART:
-      return addToCart(state, action);
+      return {
+        ...state,
+        items: addToCart(state.items, action)
+      };
     case type.REMOVE_FROM_CART:
       return removeFromCart(state, action);
     default:
