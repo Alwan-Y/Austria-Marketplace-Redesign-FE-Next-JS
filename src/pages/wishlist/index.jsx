@@ -5,15 +5,7 @@ import Type from '@/redux/type';
 import Head from 'next/head';
 import Breadcrumb from '@/components/Breadcrumb';
 
-const Wishlist = ({ wishlist, removeFromWishlist }) => {
-  /**
-   * @todo:
-   * 1. Get wishlist state from redux --done
-   * 2. Mapping data to show wishlist --done
-   * 3. add to cart event
-   * 4. remove from wishlist event --done
-   */
-
+const Wishlist = ({ wishlist, removeFromWishlist, addItemToCart }) => {
   return (
     <div className="container mt-5 pt-4">
       <Head>
@@ -27,12 +19,14 @@ const Wishlist = ({ wishlist, removeFromWishlist }) => {
           <div className="row">
             {wishlist.map((item) => (
               <WishlistCard
+                key={item.id}
+                product={item}
                 onRemove={() => {
                   removeFromWishlist(item);
                 }}
-                key={item.id}
-                cols="3"
-                product={item}
+                onAddToCart={() => {
+                  addItemToCart(item);
+                }}
               />
             ))}
           </div>
@@ -49,8 +43,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  removeFromWishlist: (payload) =>
-    dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
+  removeFromWishlist: (payload) => dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
+  addItemToCart: (payload) => dispatch(Action(Type.ADD_TO_CART, payload)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(Wishlist);
