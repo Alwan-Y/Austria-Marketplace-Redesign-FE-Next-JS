@@ -17,13 +17,7 @@ export default function Catalog({ product }) {
       </Head>
       <Breadcrumb name={id} />
       <div className="row">
-        {product
-          ? product.map((product) => (
-                <Card
-                  item = {product}
-                />
-            ))
-          : null}
+        {product ? product.map((product) => <Card item={product} />) : null}
       </div>
     </div>
   );

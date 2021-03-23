@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Heart } from '@/components/icons';
-import ROUTES from '@/config/routes'
+import ROUTES from '@/config/routes';
 
 import Search from '@/components/Search';
 
@@ -31,9 +31,7 @@ const Navbar = () => {
             </li>
             <li className="navbar__item">
               <Link href={`${ROUTES.CATALOG}/mans`}>
-                <a className="nav-link">
-                  Men
-                </a>
+                <a className="nav-link">Men</a>
               </Link>
             </li>
             <li className="navbar__item">

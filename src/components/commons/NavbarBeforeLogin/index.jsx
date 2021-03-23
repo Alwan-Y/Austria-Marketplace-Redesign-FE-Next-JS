@@ -1,7 +1,7 @@
 import Search from '@/components/Search';
 import Button from '../Button';
 import Link from 'next/link';
-import ROUTES from '@/config/routes'
+import ROUTES from '@/config/routes';
 
 const NavbarBeforeLogin = () => {
   return (
@@ -23,16 +23,14 @@ const NavbarBeforeLogin = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav text-uppercase mx-auto">
-          <li className="navbar__item">
+            <li className="navbar__item">
               <Link href={ROUTES.HOME}>
                 <a className="nav-link">Home</a>
               </Link>
             </li>
             <li className="navbar__item">
               <Link href={`${ROUTES.CATALOG}/mans`}>
-                <a className="nav-link">
-                  Men
-                </a>
+                <a className="nav-link">Men</a>
               </Link>
             </li>
             <li className="navbar__item">

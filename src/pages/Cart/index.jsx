@@ -8,12 +8,13 @@ import Courier from '@/components/Courier';
 import CartSummary from '@/components/CartSummary';
 import Button from '@/components/commons/Button';
 import { useState } from 'react';
+import EmpetyCart from '@/components/EmpetyCart';
 
-const Cart = ({items, addIncrement, removeIncrement, removeItem}) => {
-  const [ courier, setCourier] = useState(0)
-  const [ courireName, setCourierName ] = useState("") 
-  const [ tax, setTax ] = useState(0)
-  const [ amountTotal, setAmountTotal ] = useState(0)
+const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
+  const [courier, setCourier] = useState(0);
+  const [courireName, setCourierName] = useState('');
+  const [tax, setTax] = useState(0);
+  const [amountTotal, setAmountTotal] = useState(0);
 
   return (
     <div>
@@ -31,77 +32,85 @@ const Cart = ({items, addIncrement, removeIncrement, removeItem}) => {
 
       <div className="checkout">
         <div className="container">
-          <div className="row justify-content-between cart__margin">
-            <div className="col-lg-6">
-              <Heading3 className="mb-4 cart__color">Your Items</Heading3>
-              {items.map((val, idx) => {
-                return (
-                  <CartItems
-                    nameItems={val.name}
-                    amountItems={val.price}
-                    quantity={val.quantity}
-                    key={idx}
-                    onClickPlus={() => {
-                      addIncrement(val)
-                    }}
-                    onClickMinus={() => {
-                      removeIncrement(val)
-                    }}
-                    onClickDelete={() => {
-                      removeItem(val)
-                    }}
-                  />
-                );
-              })}
-              <Heading3 className="mt-5 mb-4 cart__color">Courier</Heading3>
-              <Courier 
-              onClickJNE={() => {
-                setCourier(14000)
-                setCourierName("JNE")
-              }}
-              onClickJNT={() => {
-                setCourier(12000)
-                setCourierName("JNT")
-              }}
-              />
-            </div>
-            <div className="col-lg-5">
-              <CartSummary courier={courier} nameCourier={courireName} items={items}/>
-              <div className="row mt-3">
-                <div className="col">
-                  <Button
-                    type="button"
-                    className="btn btn-secondary btn-block text-white"
-                  >
-                    Checkout
-                  </Button>
+          {!items.length ? (
+            <EmpetyCart />
+          ) : (
+            <div className="row justify-content-between cart__margin">
+              <div className="col-lg-6">
+                <Heading3 className="mb-4 cart__color">Your Items</Heading3>
+                {items.map((val, idx) => {
+                  return (
+                    <CartItems
+                      nameItems={val.name}
+                      amountItems={val.price}
+                      quantity={val.quantity}
+                      key={idx}
+                      onClickPlus={() => {
+                        addIncrement(val);
+                      }}
+                      onClickMinus={() => {
+                        removeIncrement(val);
+                      }}
+                      onClickDelete={() => {
+                        removeItem(val);
+                      }}
+                    />
+                  );
+                })}
+                <Heading3 className="mt-5 mb-4 cart__color">Courier</Heading3>
+                <Courier
+                  onClickJNE={() => {
+                    setCourier(14000);
+                    setCourierName('JNE');
+                  }}
+                  onClickJNT={() => {
+                    setCourier(12000);
+                    setCourierName('JNT');
+                  }}
+                />
+              </div>
+              <div className="col-lg-5">
+                <CartSummary
+                  courier={courier}
+                  nameCourier={courireName}
+                  items={items}
+                />
+                <div className="row mt-3">
+                  <div className="col">
+                    <Button
+                      type="button"
+                      className="btn btn-secondary btn-block text-white"
+                    >
+                      Checkout
+                    </Button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          )}
         </div>
       </div>
     </div>
   );
 };
 
-const totalAmount = (cart) => {
-  const {items} = cart
-  items.map()
-  console.log(items)
-}
+// const totalAmount = (cart) => {
+//   const {items} = cart
+//   items.map()
+//   console.log(items)
+// }
 
 const mapStateToProps = (state) => {
   const { cart } = state;
-  totalAmount(cart)
 
   return cart;
 };
 
 const mapDispatchToProps = (dispatch) => ({
   addIncrement: (payload) => dispatch(Action(Type.ADD_TO_CART, payload)),
-  removeIncrement: (payload) => dispatch(Action(Type.REMOVE_INCREMENT, payload)),
-  removeItem: (payload) => dispatch(Action(Type.REMOVE_FROM_CART, payload))
-})
+  removeIncrement: (payload) =>
+    dispatch(Action(Type.REMOVE_INCREMENT, payload)),
+  removeItem: (payload) => dispatch(Action(Type.REMOVE_FROM_CART, payload)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Cart);

@@ -43,7 +43,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  removeFromWishlist: (payload) => dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
+  removeFromWishlist: (payload) =>
+    dispatch(Action(Type.REMOVE_FROM_WISHLIST, payload)),
   addItemToCart: (payload) => dispatch(Action(Type.ADD_TO_CART, payload)),
 });
 

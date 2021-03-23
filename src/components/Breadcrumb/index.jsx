@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import ROUTES from '@/config/routes'
+import ROUTES from '@/config/routes';
 
 const Breadcrumb = ({ category, name }) => {
   return (

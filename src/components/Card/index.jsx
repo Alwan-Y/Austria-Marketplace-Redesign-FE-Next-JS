@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 const Card = ({ item, additionalContent }) => {
-  const { img, name, price, id } = item
+  const { img, name, price, id } = item;
   return (
     <div className="col-sm-4 p-3">
       <Link href={`/detail/${id}`}>

@@ -20,12 +20,12 @@ const addToCart = (state = initialState.items, { payload }) => {
   if (item) {
     const items = state.filter((item) => item.id !== payload.id);
 
-    const prevQuantity = item.quantity + 1
+    const prevQuantity = item.quantity + 1;
 
     const newItem = {
       ...item,
       quantity: prevQuantity,
-      accumAmount: item.price * prevQuantity
+      accumAmount: item.price * prevQuantity,
     };
 
     return [...items, newItem];
@@ -34,7 +34,7 @@ const addToCart = (state = initialState.items, { payload }) => {
   const newPayload = {
     ...payload,
     quantity: 1,
-    accumAmount: payload.price
+    accumAmount: payload.price,
   };
 
   return [...state, newPayload];
@@ -46,12 +46,12 @@ const removeFromIncrement = (state = initialState.items, { payload }) => {
   if (item && item.quantity > 1) {
     const items = state.filter((item) => item.id !== payload.id);
 
-    const prevQuantity = item.quantity - 1
+    const prevQuantity = item.quantity - 1;
 
     const newItem = {
       ...item,
       quantity: prevQuantity,
-      accumAmount: item.price * prevQuantity
+      accumAmount: item.price * prevQuantity,
     };
 
     return [...items, newItem];
