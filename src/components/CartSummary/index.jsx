@@ -3,7 +3,17 @@ import CartCardItems from '../CartTotalItems';
 import CartItems from '../commons/CartItems';
 import { useState } from 'react';
 
-const CartSummary = ({ courier, nameCourier, items }) => {
+const CartSummary = ({ courier, nameCourier, items, totalAmount }) => {
+  const [ amount, setAmount ] = useState(0)
+  let totalharga = 0
+
+  const findTotalAmount = () => {
+    totalAmount.forEach(val => {
+      totalharga = totalharga + val
+    })
+    setAmount(totalharga + courier)
+  }
+
   return (
     <div className=" rounded-0 cart__checkout__detail">
       <div className="card-body">
@@ -18,22 +28,6 @@ const CartSummary = ({ courier, nameCourier, items }) => {
             />
           );
         })}
-        {/* <CartCardItems
-          name="Woman Shirt"
-          informationItem="2 Items"
-          amount="IDR 200.000"
-        />
-        <CartCardItems
-          name="Woman Shirt"
-          informationItem="2 Items"
-          amount="IDR 200.000"
-        />
-        <CartCardItems
-          name="Woman Shirt"
-          informationItem="2 Items"
-          amount="IDR 200.000"
-        /> */}
-
         <hr />
 
         <CartCardItems
@@ -42,15 +36,13 @@ const CartSummary = ({ courier, nameCourier, items }) => {
           amount={courier}
         />
         <CartCardItems
-          name="Tax"
-          informationItem="PPN 10%"
-          amount="IDR 40.000"
-        />
-        <CartCardItems
           name="Total Price"
-          amount="eaeaeae"
+          amount={amount}
           className="text-primary"
         />
+        <button className="btn btn-primary" onClick={() => {
+          findTotalAmount()
+        }}> check </button>
       </div>
     </div>
   );

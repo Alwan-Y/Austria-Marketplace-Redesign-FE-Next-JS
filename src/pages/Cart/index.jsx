@@ -14,7 +14,7 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
   const [courier, setCourier] = useState(0);
   const [courireName, setCourierName] = useState('');
   const [tax, setTax] = useState(0);
-  const [amountTotal, setAmountTotal] = useState(0);
+  let totalArray = []
 
   return (
     <div>
@@ -39,6 +39,9 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
               <div className="col-lg-6">
                 <Heading3 className="mb-4 cart__color">Your Items</Heading3>
                 {items.map((val, idx) => {
+                  totalArray.push(val.quantity * val.price)
+                  console.log(totalArray)
+
                   return (
                     <CartItems
                       nameItems={val.name}
@@ -74,6 +77,7 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
                   courier={courier}
                   nameCourier={courireName}
                   items={items}
+                  totalAmount={totalArray}
                 />
                 <div className="row mt-3">
                   <div className="col">
@@ -93,12 +97,6 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
     </div>
   );
 };
-
-// const totalAmount = (cart) => {
-//   const {items} = cart
-//   items.map()
-//   console.log(items)
-// }
 
 const mapStateToProps = (state) => {
   const { cart } = state;
