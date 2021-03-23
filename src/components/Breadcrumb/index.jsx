@@ -1,18 +1,19 @@
 import React from 'react';
 import Link from 'next/link';
+import ROUTES from '@/config/routes'
 
 const Breadcrumb = ({ category, name }) => {
   return (
     <nav aria-label="breadcrumb">
       <ol className="breadcrumb bg-transparent">
         <li className="breadcrumb-item">
-          <Link href="/">
+          <Link href={ROUTES.HOME}>
             <a>Home</a>
           </Link>
         </li>
         {category ? (
           <li className="breadcrumb-item">
-            <Link href={`/catalog/${category}`}>
+            <Link href={`${ROUTES.CATALOG}/${category}`}>
               <a>{category}</a>
             </Link>
           </li>
