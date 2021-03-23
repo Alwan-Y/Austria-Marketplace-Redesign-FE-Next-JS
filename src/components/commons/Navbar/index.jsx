@@ -54,7 +54,7 @@ const Navbar = () => {
           </ul>
           <Link key="3" href="/Cart">
             <a href="/cart" className="nav-link text-white">
-              My Cart (<span className="navbar__span">12</span>)
+              My Cart
             </a>
           </Link>
           <Link key="2" href="/wishlist" className="nav-link text-white">
