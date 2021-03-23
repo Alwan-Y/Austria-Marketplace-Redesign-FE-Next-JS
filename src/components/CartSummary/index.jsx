@@ -4,15 +4,15 @@ import CartItems from '../commons/CartItems';
 import { useState } from 'react';
 
 const CartSummary = ({ courier, nameCourier, items, totalAmount }) => {
-  const [ amount, setAmount ] = useState(0)
-  let totalharga = 0
+  const [amount, setAmount] = useState(0);
+  let totalharga = 0;
 
   const findTotalAmount = () => {
-    totalAmount.forEach(val => {
-      totalharga = totalharga + val
-    })
-    setAmount(totalharga + courier)
-  }
+    totalAmount.forEach((val) => {
+      totalharga = totalharga + val;
+    });
+    setAmount(totalharga + courier);
+  };
 
   return (
     <div className=" rounded-0 cart__checkout__detail">
@@ -40,9 +40,15 @@ const CartSummary = ({ courier, nameCourier, items, totalAmount }) => {
           amount={amount}
           className="text-primary"
         />
-        <button className="btn btn-primary" onClick={() => {
-          findTotalAmount()
-        }}> check </button>
+        <button
+          className="btn btn-primary"
+          onClick={() => {
+            findTotalAmount();
+          }}
+        >
+          {' '}
+          check{' '}
+        </button>
       </div>
     </div>
   );

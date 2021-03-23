@@ -2,7 +2,7 @@ import '@/styles/index.scss';
 import store from '../redux';
 import { Provider } from 'react-redux';
 import Navbar from '../components/commons/Navbar';
-import Footer from '../components/commons/Footer/previous_footer';
+import Footer from '../components/commons/Footer';
 import NavbarBeforeLogin from '../components/commons/NavbarBeforeLogin/';
 
 function MyApp({ Component, pageProps }) {
