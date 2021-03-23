@@ -1,30 +1,112 @@
-.Footer {
-  background-color: black;
-  font-family: karla;
+// .Footer {
+//   background-color: black;
+//   font-family: karla;
+
+//   a {
+//     font-weight: 400;
+//     font-size: 14px;
+//     line-height: 20px;
+//   }
+
+//   p {
+//     font-weight: 400;
+//     font-size: 12px;
+//     line-height: 20px;
+//   }
+// }
+
+// .foot-container {
+//   padding-top: 45px;
+//   padding-bottom: 36px;
+// }
+
+// .head {
+//   font-weight: 700;
+//   font-family: montserrat;
+// }
+
+// .subhead {
+//   font-weight: 700;
+// }
+
+.footer__social-media-bar {
+  background-color: #171717;
+  height: 30vh;
 
   a {
-    font-weight: 400;
+    text-decoration: none;
+    color: $primary;
     font-size: 14px;
-    line-height: 20px;
+    margin: 0 2vw;
+    word-break: keep-all;
   }
 
-  p {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
+  &__logo {
+    white-space: nowrap;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      transition: all 0.8s ease 0s;
+      color: $white !important;
+    }
+
+    path {
+      fill: $primary;
+      stroke-width: 0.5;
+      stroke: $primary;
+    }
+
+    @include svg-animation('facebook', $primary, 60, 0);
+    @include svg-animation('twitter', $primary, 74, 0);
+    @include svg-animation('youtube', $primary, 77, 0);
+    @include svg-animation('twitch', $primary, 70, 0);
+  }
+
+  hr {
+    border-top: 1px solid $secondary;
   }
 }
 
-.foot-container {
-  padding-top: 45px;
-  padding-bottom: 36px;
+.footer {
+  &__copyright {
+    font-size: 14px;
+    color: $white;
+  }
+
+  &__link {
+    text-decoration: none;
+    transition: all 0.8s ease 0s;
+
+    &:hover {
+      transition: all 0.8s ease 0s;
+      color: $secondary;
+    }
+  }
+
+  &__span {
+    color: $primary;
+  }
+
+  &__social-media-bar {
+    height: 38vh;
+    @include media-breakpoint-up(sm) {
+      height: 17vh;
+    }
+  }
 }
 
-.head {
-  font-weight: 700;
-  font-family: montserrat;
+@media (min-width: 576px) and (max-width: 992px) {
+  .footer__social-media-bar {
+    height: 1000px;
+  }
 }
 
-.subhead {
-  font-weight: 700;
+@media (min-width: 992px) {
+  .footer .col-lg-6 {
+    text-align: right !important;
+  }
+
+  .footer .col-lg-4 {
+    text-align: left;
+  }
 }

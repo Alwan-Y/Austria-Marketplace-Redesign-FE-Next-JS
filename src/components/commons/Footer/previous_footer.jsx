@@ -3,12 +3,12 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <>
-      <div className="text-center social-media-bar" id="">
+      <div className="text-center footer__social-media-bar" id="">
         <div className="container container-fluid">
           <div className="row">
             <div className="col-lg-4 offset-lg-8 my-2 p-0">
               <a href="https://facebook.com/">
-                <span className="social-media-bar__logo social-media-bar__logo--facebook">
+                <span className="footer__social-media-bar__logo footer__social-media-bar__logo--facebook">
                   <svg
                     width="10"
                     height="20"
@@ -25,7 +25,7 @@ const Footer = () => {
                 </span>
               </a>
               <a href="https://twitter.com/">
-                <span className="social-media-bar__logo social-media-bar__logo--twitter">
+                <span className="footer__social-media-bar__logo footer__social-media-bar__logo--twitter">
                   <svg
                     width="19"
                     height="15"
@@ -38,7 +38,7 @@ const Footer = () => {
                 </span>
               </a>
               <a href="https://youtube.com/">
-                <span className="social-media-bar__logo social-media-bar__logo--youtube">
+                <span className="footer__social-media-bar__logo footer__social-media-bar__logo--youtube">
                   <svg
                     width="26"
                     height="19"
@@ -51,7 +51,7 @@ const Footer = () => {
                 </span>
               </a>
               <a href="https://twitch.tv/">
-                <span className="social-media-bar__logo social-media-bar__logo--twitch">
+                <span className="footer__social-media-bar__logo footer__social-media-bar__logo--twitch">
                   <svg
                     width="20"
                     height="19"
