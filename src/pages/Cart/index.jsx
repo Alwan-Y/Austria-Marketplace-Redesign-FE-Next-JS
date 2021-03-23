@@ -85,8 +85,15 @@ const Cart = ({items, addIncrement, removeIncrement, removeItem}) => {
   );
 };
 
+const totalAmount = (cart) => {
+  const {items} = cart
+  items.map()
+  console.log(items)
+}
+
 const mapStateToProps = (state) => {
   const { cart } = state;
+  totalAmount(cart)
 
   return cart;
 };

@@ -15,7 +15,6 @@ const initialState = {
 };
 
 const addToCart = (state = initialState.items, { payload }) => {
-  console.log(state);
   const item = state.find((item) => item.id === payload.id);
 
   if (item) {

@@ -8,13 +8,13 @@ const CartSummary = ({ courier, nameCourier, items }) => {
     <div className=" rounded-0 cart__checkout__detail">
       <div className="card-body">
         <Heading3 className="card-title cart__color">Cost Information</Heading3>
-        {console.log(items)}
-        {items.map((item) => {
+        {items.map((item, idx) => {
           return (
             <CartCardItems
               name={item.name}
               informationItem={item.quantity}
               amount={item.price * item.quantity}
+              key={idx}
             />
           );
         })}
