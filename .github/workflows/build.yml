@@ -20,3 +20,9 @@ jobs:
         run: yarn install
       - name: Run tests
         run: yarn format && yarn test
+      - name: Deploy to heroku
+        uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_email: 'austria9988@gmail.com'
+          heroku_api_key: '63fef55b-ff0a-4cca-9c65-46399c722de0'
+          heroku_app_name: 'austrianext'
