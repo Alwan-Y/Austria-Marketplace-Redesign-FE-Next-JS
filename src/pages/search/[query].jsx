@@ -12,6 +12,7 @@ const Search = () => {
 
   return (
     <div className="mt-5 pt-4 container">
+      {console.log("search jalan")}
       <Head>
         <title>{query} | Austria-next</title>
       </Head>
@@ -21,10 +22,10 @@ const Search = () => {
           ? product.map((product) => (
               <Card
                 key={product.id}
-                id={product.id}
-                thumb={product.img}
-                title={product.name}
-                price={product.price}
+                id2={product.id}
+                thumb2={product.img}
+                title2={product.name}
+                price2={product.price}
               />
             ))
           : null}
