@@ -15,7 +15,7 @@ const Courier = ({ onClickJNE, onClickJNT }) => {
             />
           </div>
           <div className="col-2">
-            <img src="img/item1.png" />
+            <img src="img/jne.jpg" />
           </div>
           <div className="col-9 mt-1">
             <label className="form-check-label" htmlFor="exampleRadios1">
@@ -38,7 +38,7 @@ const Courier = ({ onClickJNE, onClickJNT }) => {
             />
           </div>
           <div className="col-2">
-            <img src="img/item1.png" />
+            <img src="img/jnt.jpg" />
           </div>
           <div className="col-9 mt-1">
             <label className="form-check-label" htmlFor="exampleRadios1">

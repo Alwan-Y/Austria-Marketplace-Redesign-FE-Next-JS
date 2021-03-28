@@ -1,17 +1,7 @@
 import type from '../../type';
 
 const initialState = {
-  items: [
-    {
-      category: 'womans',
-      id: '3f23b862-78c7-11eb-9439-0242ac130002',
-      img:
-        'https://dynamic.zacdn.com/Rex59fAoKIS9KgP-4pZZJnS89qA=/fit-i…ff)/http://static.id.zalora.net/p/alowalo-6690-4298252-1.jpg',
-      name: 'Kaos Wanita',
-      price: 100000,
-      quantity: 3,
-    },
-  ],
+  items: [],
 };
 
 const addToCart = (state = initialState.items, { payload }) => {

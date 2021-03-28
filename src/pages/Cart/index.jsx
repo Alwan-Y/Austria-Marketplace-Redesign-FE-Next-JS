@@ -13,8 +13,11 @@ import EmpetyCart from '@/components/EmpetyCart';
 const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
   const [courier, setCourier] = useState(0);
   const [courireName, setCourierName] = useState('');
-  const [tax, setTax] = useState(0);
   let totalArray = [];
+
+  console.log(items)
+  let itemSorted = items.sort()
+  console.log(itemSorted)
 
   return (
     <div>
@@ -40,10 +43,10 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
                 <Heading3 className="mb-4 cart__color">Your Items</Heading3>
                 {items.map((val, idx) => {
                   totalArray.push(val.quantity * val.price);
-                  console.log(totalArray);
 
                   return (
                     <CartItems
+                      miniImg={val.miniImg}
                       nameItems={val.name}
                       amountItems={val.price}
                       quantity={val.quantity}
