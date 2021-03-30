@@ -1,6 +1,6 @@
 const Courier = ({ onClickJNE, onClickJNT }) => {
   return (
-    <div>
+    <div className="col-lg mb-5">
       <div className="form-check">
         <div className="row">
           <div className="col-1">
