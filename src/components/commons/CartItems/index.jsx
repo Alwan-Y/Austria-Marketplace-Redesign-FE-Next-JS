@@ -13,12 +13,12 @@ const CartItems = ({
   onClickPlus,
   onClickMinus,
   onClickDelete,
-  miniImg
+  miniImg,
 }) => {
   return (
     <div className="row mb-4">
       <div className="col-2">
-        <img src={miniImg}/>
+        <img src={miniImg} />
       </div>
       <div className="col-4">
         <h5 className="m-0">{nameItems}</h5>

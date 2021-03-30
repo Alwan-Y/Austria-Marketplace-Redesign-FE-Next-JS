@@ -15,10 +15,6 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
   const [courireName, setCourierName] = useState('');
   let totalArray = [];
 
-  console.log(items)
-  let itemSorted = items.sort()
-  console.log(itemSorted)
-
   return (
     <div>
       <div className="container cart-header cart__margin__2">

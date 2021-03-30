@@ -2,19 +2,18 @@ import React from 'react';
 import Link from 'next/link';
 
 const Card = ({ item, id2, thumb2, title2, price2, additionalContent }) => {
-  let img = ""
-  let name = ""
-  let price = ""
-  let id = ""
+  let img = '';
+  let name = '';
+  let price = '';
+  let id = '';
 
-  if ( item ) {
-    img = item.img
-    name = item.name
-    price = item.price
-    id = item.id
+  if (item) {
+    img = item.img;
+    name = item.name;
+    price = item.price;
+    id = item.id;
   }
 
-  // const { img, name, price, id } = item;
   return (
     <div className="col-sm-4 p-3">
       <Link href={`/detail/${id || id2}`}>

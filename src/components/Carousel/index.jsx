@@ -19,8 +19,8 @@ const Carousel = () => {
           <CarouselItem
             title="Especially For Muslim Women"
             productDescription="Make your days happier and memorable with new clothes"
-            imgPath="1.png"
-            classImage="img-fluid"
+            imgPath="https://dynamic.zacdn.com/Rex59fAoKIS9KgP-4pZZJnS89qA=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/alowalo-6690-4298252-1.jpg"
+            classImage="carousel__img-fluid-2"
           />
         </div>
       </div>

@@ -1,5 +1,3 @@
-import CarouselItem from '../commons/CarouselItem';
-
 import Link from 'next/link';
 
 import Button from '../commons/Button';

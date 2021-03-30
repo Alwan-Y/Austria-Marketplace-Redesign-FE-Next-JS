@@ -12,7 +12,6 @@ const Search = () => {
 
   return (
     <div className="mt-5 pt-4 container">
-      {console.log("search jalan")}
       <Head>
         <title>{query} | Austria-next</title>
       </Head>

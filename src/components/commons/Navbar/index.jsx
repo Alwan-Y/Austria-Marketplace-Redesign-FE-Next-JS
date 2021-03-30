@@ -1,10 +1,20 @@
 import Link from 'next/link';
 import { Heart } from '@/components/icons';
 import ROUTES from '@/config/routes';
-
+import { connect } from 'react-redux';
 import Search from '@/components/Search';
+import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = ({items}) => {
+  const [cartItems, setCartItems] = useState(0)
+
+  let totalItems = 0
+  if (items) {
+    items.forEach(val => {
+      totalItems = totalItems + val.quantity
+    })
+  }
+  
   return (
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
@@ -54,7 +64,7 @@ const Navbar = () => {
           </ul>
           <Link key="3" href="/Cart">
             <a href="/cart" className="nav-link text-white">
-              My Cart
+              My Cart (<span className="navbar__span">{totalItems}</span>)
             </a>
           </Link>
           <Link key="2" href="/wishlist" className="nav-link text-white">
@@ -66,4 +76,10 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = (state) => {
+  const {cart} = state
+
+  return cart
+}
+
+export default connect(mapStateToProps)(Navbar);
