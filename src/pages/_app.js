@@ -10,18 +10,18 @@ function MyApp({ Component, pageProps }) {
     if (localStorage.getItem('token')) {
       return (
         <Provider store={store}>
-          <Navbar />
+          {/* <Navbar /> */}
           <Component {...pageProps} />
-          <Footer />
+          {/* <Footer /> */}
         </Provider>
       );
     }
   }
   return (
     <Provider store={store}>
-      <NavbarBeforeLogin />
+      {/* <NavbarBeforeLogin /> */}
       <Component {...pageProps} />
-      <Footer />
+      {/* <Footer /> */}
     </Provider>
   );
 }
