@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="col-3"></div>
           </div>
           <div className="row">
-            <div className="col-sm-5">
+            <div className="col-md-5 col-sm-12">
               <div className="badewe">
                 <img src="/b.svg" alt="" />
                 <img src="/adewe.svg" alt="" />
@@ -26,7 +26,7 @@ const Footer = () => {
                 Fashion Aing Gimana Aing.
               </p>
             </div>
-            <div className="col-sm-2">
+            <div className="col-md-2 col-sm-6">
               <h6 className="head">INFORMASI</h6>
               <a>Tentang Kami</a>
               <br />
@@ -36,7 +36,7 @@ const Footer = () => {
               <br />
               <a>Kontak Kami</a>
             </div>
-            <div className="col-sm-2">
+            <div className="col-md-2 col-sm-6">
               <h6 className="head">BANTUAN</h6>
               <a>Bayar di Tempat</a>
               <br />
@@ -46,7 +46,7 @@ const Footer = () => {
               <br />
               <a>Ketentuan Retur Produk</a>
             </div>
-            <div className="col-sm-3">
+            <div className="col-md-3 col-sm-12">
               <h6 className="justify-text-center head">TEMUKAN KAMI</h6>
               <Link href="https://facebook.com">
                 <a target="_blank">
@@ -76,7 +76,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-7"></div>
+            <div className="col-md-7 col-sm-12"></div>
             <dic className="col-2">
               <img src="/car.svg" alt="car" className="pr-2" />
               <a>Gratis Ongkir</a>
@@ -87,17 +87,17 @@ const Footer = () => {
             </dic>
           </div>
           <div className="row">
-            <div className="col-sm-12">
+            <div className="col-md-12 col-sm-12">
               <h6 className="subhead">
                 Anda punya pertanyaan? Kami siap membantu
               </h6>
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-7">
+            <div className="col-md-7 col-sm-6">
               <a>Kontak | Bantuan</a>
             </div>
-            <div className="col-5">
+            <div className="col-5 col-sm-6">
               <a>Tentang Kami | Kebijakan Privasi | Persyaratan Ketentuan</a>
             </div>
           </div>
