@@ -8,7 +8,7 @@ const CategoryList = () => {
       <div className="container pb-5">
         <div className="row p-5 text-center">
           <div className="col-sm">
-            <Link href="/catalog/mans">
+            <Link href="/catalog/pria">
               <Button
                 type="dark"
                 size="lg"
@@ -19,7 +19,7 @@ const CategoryList = () => {
             </Link>
           </div>
           <div className="col-sm">
-            <Link href="/catalog/womans">
+            <Link href="/catalog/wanita">
               <Button
                 type="dark"
                 size="lg"
@@ -30,12 +30,12 @@ const CategoryList = () => {
             </Link>
           </div>
           <div className="col-sm">
-            <Link href="/catalog/kids">
+            <Link href="/catalog/anak">
               <Button
                 type="dark"
                 size="lg"
                 outline="outline"
-                children="Kids Clothes "
+                children="anak Clothes "
                 block="block"
               />
             </Link>

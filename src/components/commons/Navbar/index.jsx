@@ -40,21 +40,21 @@ const Navbar = ({items}) => {
               </Link>
             </li>
             <li className="navbar__item">
-              <Link href={`${ROUTES.CATALOG}/mans`}>
-                <a className="nav-link">Men</a>
+              <Link href={`${ROUTES.CATALOG}/pria`}>
+                <a className="nav-link">Pria</a>
               </Link>
             </li>
             <li className="navbar__item">
-              <Link href={`${ROUTES.CATALOG}/womans`}>
+              <Link href={`${ROUTES.CATALOG}/wanita`}>
                 <a className="nav-link" href={ROUTES.HOME}>
-                  Women
+                  Wanita
                 </a>
               </Link>
             </li>
             <li className="navbar__item">
-              <Link href={`${ROUTES.CATALOG}/kids`}>
+              <Link href={`${ROUTES.CATALOG}/anak`}>
                 <a className="nav-link" href={ROUTES.HOME}>
-                  Kids
+                  Anak
                 </a>
               </Link>
             </li>

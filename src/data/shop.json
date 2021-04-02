@@ -2,131 +2,146 @@
   "catalogs": [
     {
       "id": "7d90769a-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Baju koko Hitam",
       "price": 500,
-      "img": "https://dynamic.zacdn.com/GHRuIq0qfVq03BHmR34ovZvMiSM=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/lubna-homme-5029-7593252-1.jpg",
+      "img": "../../catalogSvg/pria1.svg",
       "miniImg": "img/img1.png"
     },
     {
       "id": "7d9078ca-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Kaos Hitam",
       "price": 100000,
-      "img": "https://dynamic.zacdn.com/oGIax_9UXmhmrJY4bXlpOzXn6-I=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/marks-spencer-3979-1205052-1.jpg",
+      "img": "../../catalogSvg/pria2.svg",
       "miniImg" : "img/img2.jpg"
     },
     {
       "id": "7d9079ba-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Kaos Hijau",
       "price": 300000,
-      "img": "https://dynamic.zacdn.com/Nc3_kWQXCid_jzwoUG0XNw09mYY=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/topman-5452-6365452-1.jpg",
+      "img": "../../catalogSvg/pria3.svg",
       "miniImg" : "img/img3.jpg"
     },
     {
       "id": "7d907be0-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Baju koko Putih",
       "price": 600000,
-      "img": "https://dynamic.zacdn.com/2nCFXAWlNEJLpm62eK85GwQ6v0k=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/arjuna-weda-2519-0881391-1.jpg",
+      "img": "../../catalogSvg/pria4.svg",
       "miniImg" : "img/img4.jpg"
     },
     {
       "id": "7d907cc6-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Sepatu Hitam",
       "price": 300000,
-      "img": "https://dynamic.zacdn.com/Zsu62Ip3PR1utFCgJrQoFjaaHgA=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/converse-3528-7839061-1.jpg",
+      "img": "../../catalogSvg/pria5.svg",
       "miniImg" : "img/img5.jpg"
     },
     {
       "id": "7d907d8e-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
+      "category": "pria",
       "name": "Sepatu Sketch",
       "price": 300000,
-      "img": "https://dynamic.zacdn.com/8g5UJozPIA4pMHDqrYhLB68sXo8=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/vans-8630-7725061-1.jpg",
+      "img": "../../catalogSvg/pria6.svg",
       "miniImg" : "img/img6.jpg"
     },
     {
-      "id": "7d907ef6-78c6-11eb-9439-0242ac130002",
-      "category": "mans",
-      "name": "Batik",
-      "price": 300000,
-      "img": "https://dynamic.zacdn.com/lZ9C2HodsoeHT25jgQbBIebHJ2w=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/jayashree-batik-3392-2922451-1.jpg",
-      "miniImg" : "img/img7.jpg"
-    },
-
-    {
       "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
-      "category": "womans",
+      "category": "wanita",
       "name": "Kaos Polos",
       "price": 100000,
-      "img": "https://dynamic.zacdn.com/L9EP4I8HSJNriLM1adXDHS99YaI=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/alowalo-3947-5543172-1.jpg",
+      "img": "../../catalogSvg/wanita1.svg",
       "miniImg" : "img/img8.jpg"
     },
     {
       "id": "3f23b862-78c7-11eb-9439-0242ac130002",
-      "category": "womans",
+      "category": "wanita",
       "name": "Kaos Wanita",
       "price": 100000,
-      "img": "https://dynamic.zacdn.com/Rex59fAoKIS9KgP-4pZZJnS89qA=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/alowalo-6690-4298252-1.jpg",
+      "img": "../../catalogSvg/wanita2.svg",
       "miniImg" : "img/img9.jpg"
     },
     {
       "id": "3f23b952-78c7-11eb-9439-0242ac130002",
-      "category": "womans",
+      "category": "wanita",
       "name": "Kaos Pink",
       "price": 100000,
-      "img": "https://dynamic.zacdn.com/IDgDEiIwOtowKwG8inBRBS74eaA=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/alowalo-7912-4337272-1.jpg",
+      "img": "../../catalogSvg/wanita3.svg",
       "miniImg" : "img/img10.jpg"
     },
     {
       "id": "aad766e4-78c7-11eb-9439-0242ac130002",
-      "category": "womans",
+      "category": "wanita",
       "name": "Kaos Putih",
       "price": 100000,
-      "img": "https://dynamic.zacdn.com/xKMSx3YIrmNrTlp2zSYM0NcQmBY=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/eta-5441-5945562-1.jpg",
+      "img": "../../catalogSvg/wanita4.svg",
       "miniImg" : "img/img11.jpg"
     },
     {
       "id": "dff49432-78c7-11eb-9439-0242ac130002",
-      "category": "womans",
+      "category": "wanita",
       "name": "Kaos Hijau",
       "price": 200000,
-      "img": "https://dynamic.zacdn.com/gtIKUaJnfeb5eYabGVPEAd7EA58=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/noob-7025-6918072-2.jpg",
+      "img": "../../catalogSvg/wanita5.svg",
+      "miniImg" : "img/img12.jpg"
+    },
+    {
+      "id": "dff49432-78c7-11eb-9439-0242zm130002",
+      "category": "wanita",
+      "name": "Kaos Abu",
+      "price": 200000,
+      "img": "../../catalogSvg/wanita6.svg",
       "miniImg" : "img/img12.jpg"
     },
     {
       "id": "20d94f2e-78cd-11eb-9439-0242ac130002",
-      "category": "kids",
+      "category": "anak",
       "name": "Jaket Anak",
       "price": 5000,
-      "img": "https://dynamic.zacdn.com/EQe6EMOrcYB2NTcYHTYcvBWRzlU=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/nike-2417-8230652-2.jpg",
+      "img": "../../catalogSvg/anak1.svg",
       "miniImg" : "img/img13.jpg"
     },
     {
       "id": "20d95186-78cd-11eb-9439-0242ac130002",
-      "category": "kids",
+      "category": "anak",
       "name": "Baju Anak",
       "price": 15000,
-      "img": "https://dynamic.zacdn.com/uY8U1avVt5eJonIa6XqyqzhB-Ac=/fit-in/472x690/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/fk-by-farah-khan-7485-5681852-2.jpg",
+      "img": "../../catalogSvg/anak2.svg",
       "miniImg" : "img/img14.jpg"
     },
     {
       "id": "20d95500-78cd-11eb-9439-0242ac130002",
-      "category": "kids",
+      "category": "anak",
       "name": "Kaos Anak",
       "price": 25000,
-      "img": "https://dynamic.zacdn.com/ixJS_u6PlXkxYvWIobEl-X-b9TI=/fit-in/236x345/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/quiksilver-0385-9611252-2.jpg",
+      "img": "../../catalogSvg/anak3.svg",
       "miniImg" : "img/img15.jpg"
     },
     {
       "id": "20d955e6-78cd-11eb-9439-0242ac130002",
-      "category": "kids",
+      "category": "anak",
       "name": "Kaos Anak cream",
       "price": 25000,
-      "img": "https://dynamic.zacdn.com/Cin6DGjxvVZkev6XBxtA1gFqFeY=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/billabong-5132-6447952-1.jpg",
+      "img": "../../catalogSvg/anak4.svg",
+      "miniImg" : "img/img16.jpg"
+    },
+    {
+      "id": "20d955e6-78cd-11eb-9439-0242ac1asd2",
+      "category": "anak",
+      "name": "Kaos Anak cream",
+      "price": 25000,
+      "img": "../../catalogSvg/anak5.svg",
+      "miniImg" : "img/img16.jpg"
+    },
+    {
+      "id": "20d955e6-78cd-11eb-9439-0zxcac1asd2",
+      "category": "anak",
+      "name": "Kaos Anak cream",
+      "price": 25000,
+      "img": "../../catalogSvg/anak6.svg",
       "miniImg" : "img/img16.jpg"
     }
   ]

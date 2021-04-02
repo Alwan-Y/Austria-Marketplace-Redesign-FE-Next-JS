@@ -1,7 +1,7 @@
 {
   "categories": [
-    { "category": "mans" },
-    { "category": "womans" },
-    { "category": "kids" }
+    { "category": "pria" },
+    { "category": "wanita" },
+    { "category": "anak" }
   ]
 }
