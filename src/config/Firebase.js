@@ -2,12 +2,12 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBo8uZk1FSHKYJ4Vyf2nja6XWPdgedlvtg',
-  authDomain: 'nextjs-afc1e.firebaseapp.com',
-  projectId: 'nextjs-afc1e',
-  storageBucket: 'nextjs-afc1e.appspot.com',
-  messagingSenderId: '174278718523',
-  appId: '1:174278718523:web:73803ca844b2668f95581e',
+  apiKey: 'AIzaSyBmBFP4uPaTe8esNOpwOl-6Y3U2LQYn8Qo',
+  authDomain: 'austria-binar.firebaseapp.com',
+  projectId: 'austria-binar',
+  storageBucket: 'austria-binar.appspot.com',
+  messagingSenderId: '680108405089',
+  appId: '1:680108405089:web:4595dcfdc78fd52e725520',
 };
 
 let fire = '';

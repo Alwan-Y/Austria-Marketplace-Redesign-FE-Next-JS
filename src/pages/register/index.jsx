@@ -4,12 +4,15 @@ import fire from '../../config/Firebase';
 import Breadcrumb from '@/components/Breadcrumb';
 import Button from '@/components/commons/Button';
 import Input from '@/components/commons/Input';
+import Link from 'next/link';
+import {useRouter} from 'next/router';
 
 const Register = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
+  const router = useRouter()
 
   const signUp = async () => {
     try {
@@ -25,7 +28,7 @@ const Register = () => {
 
       if (user) {
         alert('Succes register your account');
-        // redirect to homepage/other
+        router.push("/login")
       }
     } catch (e) {
       setError(true);
@@ -111,7 +114,9 @@ const Register = () => {
               <div className="col">
                 <p className="text-right login__text">
                   Already Have Account ?
-                  <span className="login__span"> Login</span>
+                  <Link href="/login">
+                    <span className="login__span"> Login</span>
+                  </Link>
                 </p>
               </div>
             </div>

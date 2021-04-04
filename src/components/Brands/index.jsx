@@ -1,6 +1,6 @@
 const Brands = () => {
   return (
-    <div className="brands ">
+    <div className="brands mt-5 mb-5 ">
       <div className="container">
         <div className="row p-5 text-center">
           <div className="col-md">

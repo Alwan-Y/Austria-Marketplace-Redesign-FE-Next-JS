@@ -5,16 +5,16 @@ import { connect } from 'react-redux';
 import Search from '@/components/Search';
 import { useState } from 'react';
 
-const Navbar = ({items}) => {
-  const [cartItems, setCartItems] = useState(0)
+const Navbar = ({ items }) => {
+  const [cartItems, setCartItems] = useState(0);
 
-  let totalItems = 0
+  let totalItems = 0;
   if (items) {
-    items.forEach(val => {
-      totalItems = totalItems + val.quantity
-    })
+    items.forEach((val) => {
+      totalItems = totalItems + val.quantity;
+    });
   }
-  
+
   return (
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
@@ -77,9 +77,9 @@ const Navbar = ({items}) => {
 };
 
 const mapStateToProps = (state) => {
-  const {cart} = state
+  const { cart } = state;
 
-  return cart
-}
+  return cart;
+};
 
 export default connect(mapStateToProps)(Navbar);

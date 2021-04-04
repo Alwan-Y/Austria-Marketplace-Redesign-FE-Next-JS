@@ -3,47 +3,47 @@
     {
       "id": "7d90769a-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Baju koko Hitam",
-      "price": 500,
+      "name": "Denim Jacket",
+      "price": 1000000,
       "img": "../../catalogSvg/pria1.svg",
       "miniImg": "img/img1.png"
     },
     {
       "id": "7d9078ca-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Kaos Hitam",
-      "price": 100000,
+      "name": "Canvas Overshirt",
+      "price": 400000,
       "img": "../../catalogSvg/pria2.svg",
       "miniImg" : "img/img2.jpg"
     },
     {
       "id": "7d9079ba-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Kaos Hijau",
-      "price": 300000,
+      "name": "Summer Sweater",
+      "price": 600000,
       "img": "../../catalogSvg/pria3.svg",
       "miniImg" : "img/img3.jpg"
     },
     {
       "id": "7d907be0-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Baju koko Putih",
-      "price": 600000,
+      "name": "Stripe T-Shirt",
+      "price": 200000,
       "img": "../../catalogSvg/pria4.svg",
       "miniImg" : "img/img4.jpg"
     },
     {
       "id": "7d907cc6-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Sepatu Hitam",
-      "price": 300000,
+      "name": "Straight A Overcoat",
+      "price": 200000,
       "img": "../../catalogSvg/pria5.svg",
       "miniImg" : "img/img5.jpg"
     },
     {
       "id": "7d907d8e-78c6-11eb-9439-0242ac130002",
       "category": "pria",
-      "name": "Sepatu Sketch",
+      "name": "Chill Shirt",
       "price": 300000,
       "img": "../../catalogSvg/pria6.svg",
       "miniImg" : "img/img6.jpg"
@@ -51,96 +51,96 @@
     {
       "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
-      "name": "Kaos Polos",
-      "price": 100000,
+      "name": "Adelaide Mini Dress",
+      "price": 800000,
       "img": "../../catalogSvg/wanita1.svg",
       "miniImg" : "img/img8.jpg"
     },
     {
       "id": "3f23b862-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
-      "name": "Kaos Wanita",
-      "price": 100000,
+      "name": "Meredith Blazer",
+      "price": 900000,
       "img": "../../catalogSvg/wanita2.svg",
       "miniImg" : "img/img9.jpg"
     },
     {
       "id": "3f23b952-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
-      "name": "Kaos Pink",
-      "price": 100000,
+      "name": "Structured Plaid Blazer",
+      "price": 1000000,
       "img": "../../catalogSvg/wanita3.svg",
       "miniImg" : "img/img10.jpg"
     },
     {
       "id": "aad766e4-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
-      "name": "Kaos Putih",
-      "price": 100000,
+      "name": "Sunkissed Turtle Neck",
+      "price": 350000,
       "img": "../../catalogSvg/wanita4.svg",
       "miniImg" : "img/img11.jpg"
     },
     {
       "id": "dff49432-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
-      "name": "Kaos Hijau",
-      "price": 200000,
+      "name": "Sheina layer Velvet",
+      "price": 700000,
       "img": "../../catalogSvg/wanita5.svg",
       "miniImg" : "img/img12.jpg"
     },
     {
       "id": "dff49432-78c7-11eb-9439-0242zm130002",
       "category": "wanita",
-      "name": "Kaos Abu",
-      "price": 200000,
+      "name": "Ethnic Dress",
+      "price": 600000,
       "img": "../../catalogSvg/wanita6.svg",
       "miniImg" : "img/img12.jpg"
     },
     {
       "id": "20d94f2e-78cd-11eb-9439-0242ac130002",
       "category": "anak",
-      "name": "Jaket Anak",
-      "price": 5000,
+      "name": "Junior T-Shirt",
+      "price": 100000,
       "img": "../../catalogSvg/anak1.svg",
       "miniImg" : "img/img13.jpg"
     },
     {
       "id": "20d95186-78cd-11eb-9439-0242ac130002",
       "category": "anak",
-      "name": "Baju Anak",
-      "price": 15000,
+      "name": "Girilie Spring Sweater",
+      "price": 300000,
       "img": "../../catalogSvg/anak2.svg",
       "miniImg" : "img/img14.jpg"
     },
     {
       "id": "20d95500-78cd-11eb-9439-0242ac130002",
       "category": "anak",
-      "name": "Kaos Anak",
-      "price": 25000,
+      "name": "Brooklyn Sweater",
+      "price": 300000,
       "img": "../../catalogSvg/anak3.svg",
       "miniImg" : "img/img15.jpg"
     },
     {
       "id": "20d955e6-78cd-11eb-9439-0242ac130002",
       "category": "anak",
-      "name": "Kaos Anak cream",
-      "price": 25000,
+      "name": "Camilia Dress",
+      "price": 400000,
       "img": "../../catalogSvg/anak4.svg",
       "miniImg" : "img/img16.jpg"
     },
     {
       "id": "20d955e6-78cd-11eb-9439-0242ac1asd2",
       "category": "anak",
-      "name": "Kaos Anak cream",
-      "price": 25000,
+      "name": "Boys Sweater",
+      "price": 299000,
       "img": "../../catalogSvg/anak5.svg",
       "miniImg" : "img/img16.jpg"
     },
     {
       "id": "20d955e6-78cd-11eb-9439-0zxcac1asd2",
       "category": "anak",
-      "name": "Kaos Anak cream",
-      "price": 25000,
+      "name": "Daria Maxi Dress",
+      "price": 400000,
       "img": "../../catalogSvg/anak6.svg",
       "miniImg" : "img/img16.jpg"
     }

@@ -14,26 +14,10 @@ const Designer = () => {
         </div>
 
         <div className="row">
-          <DesignerCard
-            imgPath="img.jpg"
-            title="Merrisa"
-            jobs="Designer"
-          />
-          <DesignerCard
-            imgPath="img2.jpg"
-            title="John"
-            jobs="Designer"
-          />
-          <DesignerCard
-            imgPath="img3.jpg"
-            title="Serrisa"
-            jobs="Designer"
-          />
-          <DesignerCard
-            imgPath="img4.jpg"
-            title="Clarisa"
-            jobs="Designer"
-          />
+          <DesignerCard imgPath="img.jpg" title="Merrisa" jobs="Designer" />
+          <DesignerCard imgPath="img2.jpg" title="John" jobs="Designer" />
+          <DesignerCard imgPath="img3.jpg" title="Serrisa" jobs="Designer" />
+          <DesignerCard imgPath="img4.jpg" title="Clarisa" jobs="Designer" />
         </div>
       </div>
     </div>

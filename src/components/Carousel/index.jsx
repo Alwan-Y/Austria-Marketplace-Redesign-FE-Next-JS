@@ -13,13 +13,19 @@ const Carousel = () => {
             active="active"
             title="Especially For Muslim Men"
             productDescription="Make your days happier and memorable with new clothes"
-            imgPath="image1.jpg"
+            imgPath="catalogSvg/pria1.svg"
             classImage="carousel__img-fluid-2"
           />
           <CarouselItem
             title="Especially For Muslim Women"
             productDescription="Make your days happier and memorable with new clothes"
-            imgPath="https://dynamic.zacdn.com/Rex59fAoKIS9KgP-4pZZJnS89qA=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/alowalo-6690-4298252-1.jpg"
+            imgPath="catalogSvg/wanita3.svg"
+            classImage="carousel__img-fluid-2"
+          />
+          <CarouselItem
+            title="Especially For Muslim Kids"
+            productDescription="Make your days happier and memorable with new clothes"
+            imgPath="catalogSvg/anak6.svg"
             classImage="carousel__img-fluid-2"
           />
         </div>

@@ -7,46 +7,27 @@ import Breadcrumb from '@/components/Breadcrumb';
 import Link from 'next/link';
 import {useRouter} from 'next/router';
 
-const Login = () => {
+const resetPassword = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
   const router = useRouter()
 
-  const signIn = async () => {
-    try {
-      const userLogin = await fire
-        .auth()
-        .signInWithEmailAndPassword(email, password);
+  const sendResetPassword = async () => {
+    const resetPassword = await fire.auth().sendPasswordResetEmail(email);
 
-      if (userLogin) {
-        const user = fire.auth().currentUser;
-
-        if (!user.emailVerified) {
-          const verification = await user.sendEmailVerification();
-
-          return alert('Verify your email first !!');
-        }
-
-        alert('Succes Login');
-        router.push("/")
-
-        return localStorage.setItem('token', user.refreshToken);
-      }
-    } catch (e) {
-      alert('Upss something error');
-    }
+    alert('Please check your email');
+    router.push("/login")
   };
 
   return (
     <div className="login">
       <Head>
-        <title>Login</title>
+        <title>Reset Password</title>
       </Head>
 
       <div className="container cart-header cart__margin__2">
         <div className="mt-5 pt-4">
-          <Breadcrumb name="Login" />
+          <Breadcrumb name="Reset Password" />
         </div>
       </div>
 
@@ -56,7 +37,7 @@ const Login = () => {
           <div className="col-lg-6 text-center">
             <Input
               htmlFor="email"
-              label="LOG IN"
+              label="Reset Password"
               type="email"
               id="email"
               placeholder="E-mail"
@@ -70,49 +51,24 @@ const Login = () => {
                 setEmail(e.target.value);
               }}
             />
-            <Input
-              htmlFor="password"
-              type="password"
-              id="password"
-              placeholder="Password"
-              className={`form-control login__height ${
-                error ? 'is-invalid' : ''
-              } login__form login__margin__2`}
-              classNameLabel="login__label"
-              value={password}
-              onChange={(e) => {
-                setError(false);
-                setPassword(e.target.value);
-              }}
-            />
-            <div className="row">
-              <div className="col">
-                <h6 className="text-right ">
-                  Forgot password?
-                  <Link href="/reset-password">
-                    <span className="login__span"> Reset Password </span>
-                  </Link>
-                </h6>
-              </div>
-            </div>
             <div className="row">
               <div className="col-lg">
                 <Button
                   type="button"
                   className="btn btn-secondary btn-block text-white mt-2"
                   size="lg"
-                  onClick={signIn}
+                  onClick={sendResetPassword}
                 >
-                  Login
+                  Reset Password
                 </Button>
               </div>
             </div>
             <div className="row">
               <div className="col">
                 <p className="text-right login__text">
-                  Don't Have Account ?
-                  <Link href="/register">
-                    <span className="login__span"> Sign up </span>
+                  Remember Password?
+                  <Link href="/login">
+                    <span className="login__span"> Login </span>
                   </Link>
                 </p>
               </div>
@@ -125,4 +81,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default resetPassword;
