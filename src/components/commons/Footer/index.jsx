@@ -27,7 +27,7 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-md-2 col-sm-6">
-              <h6 className="head">INFORMASI</h6>
+              <h6 className="head Footer__h1">INFORMASI</h6>
               <a>Tentang Kami</a>
               <br />
               <a>Syarat Penggunaan</a>
@@ -37,7 +37,7 @@ const Footer = () => {
               <a>Kontak Kami</a>
             </div>
             <div className="col-md-2 col-sm-6">
-              <h6 className="head">BANTUAN</h6>
+              <h6 className="head Footer__h2">BANTUAN</h6>
               <a>Bayar di Tempat</a>
               <br />
               <a>Cara Pemesanan</a>
@@ -46,8 +46,8 @@ const Footer = () => {
               <br />
               <a>Ketentuan Retur Produk</a>
             </div>
-            <div className="col-md-3 col-sm-12">
-              <h6 className="justify-text-center head">TEMUKAN KAMI</h6>
+            <div className="col-md-3 col-sm">
+              <h6 className="head Footer__h3">TEMUKAN KAMI</h6>
               <Link href="https://facebook.com">
                 <a target="_blank">
                   <img src="/facebook.svg" alt="facebook" className="pl-4" />
@@ -75,20 +75,20 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="row">
-            <div className="col-md-7 col-sm-12"></div>
-            <dic className="col-2">
+          <div className="row Footer__h5">
+            <div className="col-md col-sm"></div>
+            <dic className="col-md col-sm">
               <img src="/car.svg" alt="car" className="pr-2" />
               <a>Gratis Ongkir</a>
             </dic>
-            <dic className="col-3">
+            <dic className="col-md col-sm">
               <img src="/cod.svg" alt="cod" className="pr-2" />
               <a>Bayar di Tempat</a>
             </dic>
           </div>
           <div className="row">
             <div className="col-md-12 col-sm-12">
-              <h6 className="subhead">
+              <h6 className="subhead Footer__h4">
                 Anda punya pertanyaan? Kami siap membantu
               </h6>
             </div>
