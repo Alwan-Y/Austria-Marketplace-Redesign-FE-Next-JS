@@ -5,18 +5,18 @@ import { useState } from 'react';
 import fire from '../../config/Firebase';
 import Breadcrumb from '@/components/Breadcrumb';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 
 const resetPassword = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
-  const router = useRouter()
+  const router = useRouter();
 
   const sendResetPassword = async () => {
     const resetPassword = await fire.auth().sendPasswordResetEmail(email);
 
     alert('Please check your email');
-    router.push("/login")
+    router.push('/login');
   };
 
   return (

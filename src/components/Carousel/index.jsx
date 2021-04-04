@@ -19,7 +19,7 @@ const Carousel = () => {
           <CarouselItem
             title="Especially For Muslim Women"
             productDescription="Make your days happier and memorable with new clothes"
-            imgPath="catalogSvg/wanita3.svg"
+            imgPath="catalogSvg/wanita4.svg"
             classImage="carousel__img-fluid-2"
           />
           <CarouselItem

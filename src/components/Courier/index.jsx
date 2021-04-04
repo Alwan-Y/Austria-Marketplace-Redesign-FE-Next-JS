@@ -1,4 +1,13 @@
 const Courier = ({ onClickJNE, onClickJNT }) => {
+  let jne = new Intl.NumberFormat('id-ID', {
+    style: 'currency',
+    currency: 'IDR',
+  }).format(12000);
+  let jnt = new Intl.NumberFormat('id-ID', {
+    style: 'currency',
+    currency: 'IDR',
+  }).format(14000);
+
   return (
     <div className="col-lg mb-5">
       <div className="form-check">
@@ -21,7 +30,7 @@ const Courier = ({ onClickJNE, onClickJNT }) => {
             <label className="form-check-label" htmlFor="exampleRadios1">
               JNE
               <br />
-              14000
+              {jne}
             </label>
           </div>
         </div>
@@ -44,7 +53,7 @@ const Courier = ({ onClickJNE, onClickJNT }) => {
             <label className="form-check-label" htmlFor="exampleRadios1">
               J&T
               <br />
-              12000
+              {jnt}
             </label>
           </div>
         </div>

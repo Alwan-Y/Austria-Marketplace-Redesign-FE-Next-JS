@@ -2,4 +2,32 @@
   &__img {
     max-width: 18rem;
   }
+
+  &__h1 {
+    font-weight: bold;
+
+    margin-top: 50px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 0px;
+      
+    }
+  }
+
+  &__h3 {
+    font-weight: bold;
+  }
+
+  &__price {
+    font-weight: bold;
+    color: $primary;
+  }
+
+  &__wishlist {
+    color: $secondary;
+    font-weight: bold;
+  }
+
+  &__cart {
+    font-weight: bold;
+  }
 }

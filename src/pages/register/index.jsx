@@ -5,14 +5,14 @@ import Breadcrumb from '@/components/Breadcrumb';
 import Button from '@/components/commons/Button';
 import Input from '@/components/commons/Input';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 
 const Register = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
-  const router = useRouter()
+  const router = useRouter();
 
   const signUp = async () => {
     try {
@@ -28,7 +28,7 @@ const Register = () => {
 
       if (user) {
         alert('Succes register your account');
-        router.push("/login")
+        router.push('/login');
       }
     } catch (e) {
       setError(true);

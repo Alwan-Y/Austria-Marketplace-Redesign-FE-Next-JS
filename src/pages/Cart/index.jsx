@@ -39,12 +39,15 @@ const Cart = ({ items, addIncrement, removeIncrement, removeItem }) => {
                 <Heading3 className="mb-4 cart__color">Your Items</Heading3>
                 {items.map((val, idx) => {
                   totalArray.push(val.quantity * val.price);
-
+                  let newVal = new Intl.NumberFormat('id-ID', {
+                    style: 'currency',
+                    currency: 'IDR',
+                  }).format(val.price);
                   return (
                     <CartItems
                       miniImg={val.miniImg}
                       nameItems={val.name}
-                      amountItems={val.price}
+                      amountItems={newVal}
                       quantity={val.quantity}
                       key={idx}
                       onClickPlus={() => {

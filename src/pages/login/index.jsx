@@ -5,13 +5,13 @@ import { useState } from 'react';
 import fire from '../../config/Firebase';
 import Breadcrumb from '@/components/Breadcrumb';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 
 const Login = () => {
   const [error, setError] = useState(false);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const router = useRouter()
+  const router = useRouter();
 
   const signIn = async () => {
     try {
@@ -29,7 +29,7 @@ const Login = () => {
         }
 
         alert('Succes Login');
-        router.push("/")
+        router.push('/');
 
         return localStorage.setItem('token', user.refreshToken);
       }
