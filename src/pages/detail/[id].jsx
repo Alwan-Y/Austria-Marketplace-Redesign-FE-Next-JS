@@ -15,10 +15,10 @@ function Detail({ product, addToWishlist, addToCartList }) {
       </Head>
       <Breadcrumb category={product.category} name={product.name} />
       <div className="row">
-        <div className="col-sm col-lg-4">
+        <div className="col-sm col-lg-4 text-center">
           <img src={product.img} alt="product image" className="detail__img" />
         </div>
-        <div className="col-sm col-lg-6">
+        <div className="col-sm col-lg-6 text-left">
           <h1 className="detail__h1">{product.name}</h1>
           <p>Dress Dengan Detail Untuk Pesta</p>
           <hr />
