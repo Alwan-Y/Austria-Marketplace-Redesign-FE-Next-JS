@@ -49,11 +49,11 @@
       "miniImg" : "img/img6.jpg"
     },
     {
-      "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
+      "id": "dff49432-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
       "name": "Adelaide Mini Dress",
       "price": 800000,
-      "img": "../../catalogSvg/wanita1.svg",
+      "img": "../../catalogSvg/wanita5.svg",
       "miniImg" : "img/img8.jpg"
     },
     {
@@ -81,11 +81,11 @@
       "miniImg" : "img/img11.jpg"
     },
     {
-      "id": "dff49432-78c7-11eb-9439-0242ac130002",
+      "id": "3f23b38a-78c7-11eb-9439-0242ac130002",
       "category": "wanita",
       "name": "Sheina layer Velvet",
       "price": 700000,
-      "img": "../../catalogSvg/wanita5.svg",
+      "img": "../../catalogSvg/wanita1.svg",
       "miniImg" : "img/img12.jpg"
     },
     {
