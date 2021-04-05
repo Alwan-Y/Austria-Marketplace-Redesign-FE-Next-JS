@@ -18,4 +18,32 @@
     color: $primary;
     font-weight: 600;
   }
+
+  &__login {
+    margin-top: 20px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 0px;
+    }
+  }
+
+  &__login2 {
+    margin-top: 20px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 0px;
+    }
+  }
+
+  &__register {
+    margin-top: 20px;
+    @include media-breakpoint-up(sm) {
+      margin-top: 0px;
+    }
+  }
+
+  &__cart {
+    margin-left: -18px;
+    @include media-breakpoint-up(sm) {
+      margin-left: 0px;
+    }
+  }
 }

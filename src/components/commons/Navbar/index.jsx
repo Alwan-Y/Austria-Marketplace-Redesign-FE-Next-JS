@@ -3,16 +3,26 @@ import { Heart } from '@/components/icons';
 import ROUTES from '@/config/routes';
 import { connect } from 'react-redux';
 import Search from '@/components/Search';
-import { useState } from 'react';
+import Button from '@/components/commons/Button'
+import fire from '@/config/Firebase'
+import { useRouter } from 'next/router';
 
 const Navbar = ({ items }) => {
-  const [cartItems, setCartItems] = useState(0);
-
+  const router = useRouter();
+  
   let totalItems = 0;
   if (items) {
     items.forEach((val) => {
       totalItems = totalItems + val.quantity;
     });
+  }
+
+  const logout = async () => {
+    const userLogout = await fire.auth().signOut()
+
+      localStorage.removeItem('token')
+      alert('Succes Logout');
+      router.push('/');
   }
 
   return (
@@ -25,7 +35,7 @@ const Navbar = ({ items }) => {
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarNav"
+          data-target="#  navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -61,9 +71,18 @@ const Navbar = ({ items }) => {
             <li className="navbar__item">
               <Search />
             </li>
+            <li>
+            <Button
+              type="primary"
+              outline="outline"
+              children="Logout"
+              onClick={logout}
+              className="navbar__login2"
+            />
+            </li>
           </ul>
           <Link key="3" href="/Cart">
-            <a href="/cart" className="nav-link text-white">
+            <a href="/cart" className="nav-link text-white navbar__cart">
               My Cart (<span className="navbar__span">{totalItems}</span>)
             </a>
           </Link>

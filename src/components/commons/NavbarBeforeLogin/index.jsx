@@ -52,14 +52,14 @@ const NavbarBeforeLogin = () => {
             </li>
           </ul>
           <Link href={ROUTES.REGISTER}>
-            <Button type="light" outline="outline" children="Register" />
+            <Button type="primary" outline="outline" children="Register" className="navbar__login" />
           </Link>
           <Link href={ROUTES.LOGIN}>
             <Button
-              type="primary"
+              type="info"
               outline="outline"
               children="Login"
-              className="ml-2"
+              className="ml-3 navbar__register"
             />
           </Link>
         </div>
