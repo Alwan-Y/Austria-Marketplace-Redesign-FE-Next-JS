@@ -24,7 +24,7 @@ function Detail({ product, addToWishlist, addToCartList }) {
           <hr />
           <h5 className="detail__price">IDR : {product.price}</h5>
           <hr />
-          <h3 className="detail__h3">PERAWATAN</h3>
+          <h5 className="detail__h3">PERAWATAN</h5>
           <ul className="mt-4 mb-4">
             <li>Cuci dengan suhu sedang</li>
             <li>Jangan gunakan pemutih</li>
