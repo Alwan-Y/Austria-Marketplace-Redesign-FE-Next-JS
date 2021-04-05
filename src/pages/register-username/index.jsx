@@ -14,20 +14,22 @@ const resetPassword = () => {
 
   const registerUsername = async () => {
     const user = await fire.auth().onAuthStateChanged((user) => {
-      if (user && username) {
+      if (username && user) {
         user
           .updateProfile({
             displayName: username,
           })
           .then(function () {
             alert('Succes Update Your Username');
-            router.push('/login');
+            router.push('/');
           })
           .catch(function (error) {
             alert(error);
           });
+      } 
+      if (!username) {
+        alert('Please Fill Your Username')
       }
-      alert('Please Fill Your Username');
     });
   };
 

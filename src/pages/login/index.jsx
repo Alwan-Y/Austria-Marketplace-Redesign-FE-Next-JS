@@ -29,6 +29,8 @@ const Login = () => {
         }
 
         if (!user.displayName) {
+          localStorage.setItem('token', user.refreshToken);
+          
           alert("Please Fill Your Username")
           return router.push('/register-username')
         }
