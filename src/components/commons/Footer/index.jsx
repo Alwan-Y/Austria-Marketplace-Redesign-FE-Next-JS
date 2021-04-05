@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="col-3"></div>
           </div>
           <div className="row">
-            <div className="col-md-5 col-sm-12">
+            <div className="col-md-5 col-sm-12 col-xl-6">
               <div className="badewe">
                 <img src="/b.svg" alt="" />
                 <img src="/adewe.svg" alt="" />
@@ -26,7 +26,7 @@ const Footer = () => {
                 Fashion Aing Gimana Aing.
               </p>
             </div>
-            <div className="col-md-2 col-sm-6">
+            <div className="col-md-2 col-sm-6 col-xl-2">
               <h6 className="head Footer__h1">INFORMASI</h6>
               <a>Tentang Kami</a>
               <br />
@@ -36,7 +36,7 @@ const Footer = () => {
               <br />
               <a>Kontak Kami</a>
             </div>
-            <div className="col-md-2 col-sm-6">
+            <div className="col-md-2 col-sm-6 col-xl-2">
               <h6 className="head Footer__h2">BANTUAN</h6>
               <a>Bayar di Tempat</a>
               <br />
@@ -46,7 +46,7 @@ const Footer = () => {
               <br />
               <a>Ketentuan Retur Produk</a>
             </div>
-            <div className="col-md-3 col-sm">
+            <div className="col-md-3 col-sm col-xl-2">
               <h6 className="head Footer__h3">TEMUKAN KAMI</h6>
               <Link href="https://facebook.com">
                 <a target="_blank">
