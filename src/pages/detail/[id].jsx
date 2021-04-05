@@ -30,7 +30,7 @@ function Detail({ product, addToWishlist, addToCartList }) {
             <li>Jangan gunakan pemutih</li>
             <li>Keringkan dengan suhu sedang</li>
           </ul>
-          <hr/>
+          <hr />
           <Button
             type="button"
             className="btn btn-secondary btn-block text-white detail__cart"
@@ -41,9 +41,14 @@ function Detail({ product, addToWishlist, addToCartList }) {
           >
             Add to Cart
           </Button>
-          <Button type="button" className="btn btn-light btn-block detail__wishlist" onClick={() => {
-                addToWishlist(product);
-              }} size="lg">
+          <Button
+            type="button"
+            className="btn btn-light btn-block detail__wishlist"
+            onClick={() => {
+              addToWishlist(product);
+            }}
+            size="lg"
+          >
             Add to Whishlist
           </Button>
         </div>

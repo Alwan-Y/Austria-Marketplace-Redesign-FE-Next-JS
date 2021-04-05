@@ -28,6 +28,11 @@ const Login = () => {
           return alert('Verify your email first !!');
         }
 
+        if (!user.displayName) {
+          alert("Please Fill Your Username")
+          return router.push('/register-username')
+        }
+
         alert('Succes Login');
         router.push('/');
 

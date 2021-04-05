@@ -3,13 +3,25 @@ import { Heart } from '@/components/icons';
 import ROUTES from '@/config/routes';
 import { connect } from 'react-redux';
 import Search from '@/components/Search';
-import Button from '@/components/commons/Button'
-import fire from '@/config/Firebase'
+import Button from '@/components/commons/Button';
+import fire from '@/config/Firebase';
 import { useRouter } from 'next/router';
+import { useState, useEffect } from 'react';
 
 const Navbar = ({ items }) => {
   const router = useRouter();
-  
+  const [username, setUsername] = useState("")
+
+  useEffect(() => {
+    const getUsername = async () => {
+      const user = await fire.auth().onAuthStateChanged((user) => {
+        setUsername(user.displayName)
+      })
+    } 
+
+    getUsername()
+  }, []);
+
   let totalItems = 0;
   if (items) {
     items.forEach((val) => {
@@ -18,24 +30,25 @@ const Navbar = ({ items }) => {
   }
 
   const logout = async () => {
-    const userLogout = await fire.auth().signOut()
+    const userLogout = await fire.auth().signOut();
 
-      localStorage.removeItem('token')
-      alert('Succes Logout');
-      router.push('/');
-  }
+    localStorage.removeItem('token');
+    alert('Succes Logout');
+    router.push('/');
+  };
 
   return (
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="img/32.png" alt="Austria" />
+          <img src="b.svg" alt="Austria" />
+          <img src="adewe.svg" alt="Austria" />
         </a>
         <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#  navbarNav"
+          data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
@@ -72,13 +85,25 @@ const Navbar = ({ items }) => {
               <Search />
             </li>
             <li>
-            <Button
-              type="primary"
-              outline="outline"
-              children="Logout"
-              onClick={logout}
-              className="navbar__login2"
-            />
+              <div className="btn-group">
+                <Button
+                  type="primary"
+                  outline="outline"
+                  children={`Hallo ${username}`}
+                  className="navbar__login2 dropdown-toggle"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                />
+                <div className="dropdown-menu">
+                  <a className="dropdown-item toLowerCase" href="#">
+                    Change Password
+                  </a>
+                  <a className="dropdown-item" onClick={logout} href="#">
+                    Logout
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
           <Link key="3" href="/Cart">

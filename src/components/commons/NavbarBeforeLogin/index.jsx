@@ -8,7 +8,8 @@ const NavbarBeforeLogin = () => {
     <div className="navbar navbar-expand-lg navbar-dark fixed-top">
       <div className="container">
         <a className="navbar-brand" href="#">
-          <img src="img/32.png" alt="Austria" />
+          <img src="b.svg" alt="Austria" />
+          <img src="adewe.svg" alt="Austria" />
         </a>
         <button
           className="navbar-toggler"
@@ -52,7 +53,12 @@ const NavbarBeforeLogin = () => {
             </li>
           </ul>
           <Link href={ROUTES.REGISTER}>
-            <Button type="primary" outline="outline" children="Register" className="navbar__login" />
+            <Button
+              type="primary"
+              outline="outline"
+              children="Register"
+              className="navbar__login"
+            />
           </Link>
           <Link href={ROUTES.LOGIN}>
             <Button
