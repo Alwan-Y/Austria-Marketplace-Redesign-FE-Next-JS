@@ -96,9 +96,6 @@ const Navbar = ({ items }) => {
                   aria-expanded="false"
                 />
                 <div className="dropdown-menu">
-                  <a className="dropdown-item toLowerCase" href="#">
-                    Change Password
-                  </a>
                   <a className="dropdown-item" onClick={logout} href="#">
                     Logout
                   </a>
